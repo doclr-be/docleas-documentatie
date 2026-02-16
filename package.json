@@ -1,0 +1,19 @@
+{
+  "name": "docleas-documentation",
+  "version": "1.0.0",
+  "description": "Documentatie voor Docleas afsprakensysteem",
+  "scripts": {
+    "docs:dev": "docsify serve Documentation",
+    "docs:mkdocs": "mkdocs serve",
+    "docs:build": "mkdocs build"
+  },
+  "keywords": [
+    "documentation",
+    "docleas"
+  ],
+  "author": "Docleas Team",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "docsify-cli": "^4.4.4"
+  }
+}
