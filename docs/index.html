@@ -7,6 +7,12 @@
   <meta name="description" content="Documentatie voor Docleas afsprakensysteem">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <script defer
+    src="https://www.gstatic.com/ces-console/fast/chat-messenger/prod/v1.10/chat-messenger.js">
+  </script>
+  <link rel="stylesheet" href="https://www.gstatic.com/ces-console/fast/chat-messenger/prod/v1.10/themes/chat-messenger-default.css">
+  <link rel="stylesheet" href="https://www.gstatic.com/ces-console/fast/chat-messenger/prod/v1.10/themes/chat-messenger-layout.css">
+
   <style>
     :root {
       --theme-color: #2c3e50;
@@ -46,5 +52,34 @@
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
   <!-- Copy code -->
   <script src="//cdn.jsdelivr.net/npm/docsify-copy-code"></script>
+
+  <script>
+    window.addEventListener("chat-messenger-loaded", () => {
+      chatSdk.registerContext(
+        chatSdk.prebuilts.ces.createContext({
+          deploymentName: "projects/doclr-agents/locations/us/apps/d0f8d676-0330-4b3d-9eac-6b826c8a2489/deployments/c56f2cd9-421e-4e54-81e8-06b4ee54534b",
+          tokenBroker: {
+            enableTokenBroker: true,
+            enableRecaptcha: false,
+          },
+        }),
+      );
+    });
+</script>
+<!-- Update the url-allowlist attribute with a comma-separated list of origins allowed to render images -->
+<chat-messenger
+  url-allowlist="*"
+>
+  <chat-messenger-container
+    chat-title="Stel een vraag"
+    chat-title-icon="https://gstatic.com/dialogflow-console/common/assets/ccai-favicons/conversational_agents.png"
+    enable-file-upload
+  >
+    <chat-reset-session-button
+      slot="titlebar-actions"
+      title-text="Start new chat"
+    ></chat-reset-session-button>
+  </chat-messenger-container>
+</chat-messenger>
 </body>
 </html>
