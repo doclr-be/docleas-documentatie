@@ -1,4 +1,4 @@
-# Producten - Structuur (DRAFT)
+# Producten - Structuur
 
 ## Overzicht
 
