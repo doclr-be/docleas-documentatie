@@ -3,9 +3,7 @@
   "version": "1.0.0",
   "description": "Documentatie voor Docleas afsprakensysteem",
   "scripts": {
-    "docs:dev": "docsify serve Documentation",
-    "docs:mkdocs": "mkdocs serve",
-    "docs:build": "mkdocs build"
+    "docs:dev": "docsify serve docs"
   },
   "keywords": [
     "documentation",
