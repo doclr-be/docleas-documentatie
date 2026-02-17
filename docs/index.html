@@ -13,10 +13,33 @@
   <link rel="stylesheet" href="https://www.gstatic.com/ces-console/fast/chat-messenger/prod/v1.10/themes/chat-messenger-default.css">
   <link rel="stylesheet" href="https://www.gstatic.com/ces-console/fast/chat-messenger/prod/v1.10/themes/chat-messenger-layout.css">
 
+ 
+ <style>
+    chat-messenger {
+    
+
+    }
+
+     chat-messenger .titlebar-wrapper{
+        padding-top: 5px;
+      }
+  </style>
   <style>
+    .sidebar {
+      width: 350px;
+    }
     :root {
       --theme-color: #2c3e50;
       --theme-color-secondary: #42b983;
+
+      --chat-messenger-internal-titlebar-padding: 5px 15px;
+      --chat-messenger-internal-chat-border-radius: 0;
+      --chat-messenger-internal-default-chat-border-radius:  0;
+      --chat-messenger-shape--corner-value-extra-large: 0;
+      --chat-messenger-internal-chat-border: none;
+      --chat-messenger-internal-input-box-border-radius: 4px;
+      --chat-messenger-spacing--one: 4px;
+      --chat-messenger-color--surface : #fff;
     }
   </style>
 </head>
@@ -64,22 +87,23 @@
           },
         }),
       );
+
+        
+      function setLayout(){
+        const wrapper = document.querySelector("chat-messenger").querySelector("chat-messenger-container").shadowRoot.querySelector(".chat-wrapper");
+        if (wrapper) {
+          wrapper.style.maxHeight = '400px';
+        }
+      }
+
+  window.setTimeout(setLayout, 20);
+  window.setTimeout(setLayout, 200);
+  window.setTimeout(setLayout, 2000);
+  window.setTimeout(setLayout, 4000);
+      
+
     });
 </script>
-<!-- Update the url-allowlist attribute with a comma-separated list of origins allowed to render images -->
-<chat-messenger
-  url-allowlist="*"
->
-  <chat-messenger-container
-    chat-title="Stel een vraag"
-    chat-title-icon="https://gstatic.com/dialogflow-console/common/assets/ccai-favicons/conversational_agents.png"
-    enable-file-upload
-  >
-    <chat-reset-session-button
-      slot="titlebar-actions"
-      title-text="Start new chat"
-    ></chat-reset-session-button>
-  </chat-messenger-container>
-</chat-messenger>
+
 </body>
 </html>
