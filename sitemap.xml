@@ -3,7 +3,7 @@
 
   <!-- Home -->
   <url>
-    <loc>https://doclr-be.github.io/docleas-documentatie/</loc>
+    <loc>https://docleas-documentation-zzn92.ondigitalocean.app/</loc>
     <lastmod>2026-02-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
@@ -11,7 +11,7 @@
 
   <!-- De Burgerflow -->
   <url>
-    <loc>https://doclr-be.github.io/docleas-documentatie/burgerflow/</loc>
+    <loc>https://docleas-documentation-zzn92.ondigitalocean.app/burgerflow/</loc>
     <lastmod>2026-02-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -19,14 +19,14 @@
 
   <!-- Voor Dienstbeheerders -->
   <url>
-    <loc>https://doclr-be.github.io/docleas-documentatie/dienstbeheerders/</loc>
+    <loc>https://docleas-documentation-zzn92.ondigitalocean.app/dienstbeheerders/</loc>
     <lastmod>2026-02-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://doclr-be.github.io/docleas-documentatie/dienstbeheerders/gemeente-instellingen</loc>
+    <loc>https://docleas-documentation-zzn92.ondigitalocean.app/dienstbeheerders/gemeente-instellingen</loc>
     <lastmod>2026-02-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -34,63 +34,63 @@
 
   <!-- Producten -->
   <url>
-    <loc>https://doclr-be.github.io/docleas-documentatie/dienstbeheerders/producten/algemene-werking</loc>
+    <loc>https://docleas-documentation-zzn92.ondigitalocean.app/dienstbeheerders/producten/algemene-werking</loc>
     <lastmod>2026-02-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://doclr-be.github.io/docleas-documentatie/dienstbeheerders/producten/producten-beheren</loc>
+    <loc>https://docleas-documentation-zzn92.ondigitalocean.app/dienstbeheerders/producten/producten-beheren</loc>
     <lastmod>2026-02-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://doclr-be.github.io/docleas-documentatie/dienstbeheerders/producten/algemene-instellingen</loc>
+    <loc>https://docleas-documentation-zzn92.ondigitalocean.app/dienstbeheerders/producten/algemene-instellingen</loc>
     <lastmod>2026-02-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://doclr-be.github.io/docleas-documentatie/dienstbeheerders/producten/teksten</loc>
+    <loc>https://docleas-documentation-zzn92.ondigitalocean.app/dienstbeheerders/producten/teksten</loc>
     <lastmod>2026-02-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://doclr-be.github.io/docleas-documentatie/dienstbeheerders/producten/velden</loc>
+    <loc>https://docleas-documentation-zzn92.ondigitalocean.app/dienstbeheerders/producten/velden</loc>
     <lastmod>2026-02-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://doclr-be.github.io/docleas-documentatie/dienstbeheerders/producten/beschikbaarheden</loc>
+    <loc>https://docleas-documentation-zzn92.ondigitalocean.app/dienstbeheerders/producten/beschikbaarheden</loc>
     <lastmod>2026-02-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://doclr-be.github.io/docleas-documentatie/dienstbeheerders/producten/groepen</loc>
+    <loc>https://docleas-documentation-zzn92.ondigitalocean.app/dienstbeheerders/producten/groepen</loc>
     <lastmod>2026-02-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://doclr-be.github.io/docleas-documentatie/dienstbeheerders/producten/structuur</loc>
+    <loc>https://docleas-documentation-zzn92.ondigitalocean.app/dienstbeheerders/producten/structuur</loc>
     <lastmod>2026-02-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://doclr-be.github.io/docleas-documentatie/dienstbeheerders/producten/overzichtspagina</loc>
+    <loc>https://docleas-documentation-zzn92.ondigitalocean.app/dienstbeheerders/producten/overzichtspagina</loc>
     <lastmod>2026-02-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -98,7 +98,7 @@
 
   <!-- Agenda's -->
   <url>
-    <loc>https://doclr-be.github.io/docleas-documentatie/dienstbeheerders/agendas</loc>
+    <loc>https://docleas-documentation-zzn92.ondigitalocean.app/dienstbeheerders/agendas</loc>
     <lastmod>2026-02-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -106,7 +106,7 @@
 
   <!-- Werkschema's -->
   <url>
-    <loc>https://doclr-be.github.io/docleas-documentatie/dienstbeheerders/werkschemas/</loc>
+    <loc>https://docleas-documentation-zzn92.ondigitalocean.app/dienstbeheerders/werkschemas/</loc>
     <lastmod>2026-02-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -114,7 +114,7 @@
 
   <!-- Gebruikers -->
   <url>
-    <loc>https://doclr-be.github.io/docleas-documentatie/dienstbeheerders/gebruikers</loc>
+    <loc>https://docleas-documentation-zzn92.ondigitalocean.app/dienstbeheerders/gebruikers</loc>
     <lastmod>2026-02-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -122,7 +122,7 @@
 
   <!-- Statistieken -->
   <url>
-    <loc>https://doclr-be.github.io/docleas-documentatie/dienstbeheerders/statistieken</loc>
+    <loc>https://docleas-documentation-zzn92.ondigitalocean.app/dienstbeheerders/statistieken</loc>
     <lastmod>2026-02-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -130,7 +130,7 @@
 
   <!-- FAQ -->
   <url>
-    <loc>https://doclr-be.github.io/docleas-documentatie/dienstbeheerders/faq</loc>
+    <loc>https://docleas-documentation-zzn92.ondigitalocean.app/dienstbeheerders/faq</loc>
     <lastmod>2026-02-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -138,7 +138,7 @@
 
   <!-- Technische Documentatie -->
   <url>
-    <loc>https://doclr-be.github.io/docleas-documentatie/technische-documentatie</loc>
+    <loc>https://docleas-documentation-zzn92.ondigitalocean.app/technische-documentatie</loc>
     <lastmod>2026-02-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
