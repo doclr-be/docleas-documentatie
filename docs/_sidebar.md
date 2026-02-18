@@ -1,20 +1,5 @@
 <!-- _sidebar.md -->
 
-<!-- Update the url-allowlist attribute with a comma-separated list of origins allowed to render images -->
-<div>
-<chat-messenger
-  url-allowlist="*"
->
-  <chat-messenger-container
-    chat-title="Docleas chatbot"
-    chat-title-icon="https://gstatic.com/dialogflow-console/common/assets/ccai-favicons/conversational_agents.png"
-    placeholder-text="Stel hier je vraag..."
-  >
-  
-  </chat-messenger-container>
-</chat-messenger>
-</div>
-
 
 * [Home](/)
 

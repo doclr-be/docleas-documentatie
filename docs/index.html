@@ -28,19 +28,25 @@
     .sidebar {
       width: 350px;
     }
+    .my-chat-container{
+      max-width: 900px;
+      margin: 0 auto;
+    }
     :root {
       --theme-color: #2c3e50;
       --theme-color-secondary: #42b983;
 
       --chat-messenger-internal-titlebar-padding: 5px 15px;
-      --chat-messenger-internal-chat-border-radius: 0;
-      --chat-messenger-internal-default-chat-border-radius:  0;
-      --chat-messenger-shape--corner-value-extra-large: 0;
+      --chat-messenger-internal-chat-border-radius: 8px;
+      --chat-messenger-internal-default-chat-border-radius:  8px;
+      --chat-messenger-shape--corner-value-extra-large: 8px;
       --chat-messenger-internal-chat-border: none;
       --chat-messenger-internal-input-box-border-radius: 4px;
       --chat-messenger-spacing--one: 4px;
       --chat-messenger-color--surface : #fff;
     }
+
+ 
 
     .center-image{
       display: block;
@@ -54,6 +60,7 @@
     window.$docsify = {
       name: 'Docleas Documentatie',
       repo: '',
+      coverpage: true,
       routerMode: 'history',
       loadSidebar: true,
       subMaxLevel: 3,
