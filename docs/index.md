@@ -2,41 +2,36 @@
 
 ## Welkom
 
-Welkom bij de documentatie van Docleas, het online afsprakensysteem voor lokale besturen in België. Docleas stelt burgers in staat om online afspraken te maken bij hun gemeente en biedt medewerkers efficiënte tools om deze afspraken en agenda's te beheren.
+Welkom bij de documentatie van Docleas, het online afsprakensysteem voor lokale besturen in Vlaanderen. Docleas stelt burgers in staat om online afspraken te maken bij hun lokaal bestuur en biedt medewerkers efficiënte tools om deze afspraken en agenda's te beheren.
 
 ## Over Docleas
 
-Docleas is een online afsprakensysteem specifiek ontwikkeld voor gemeenten. Elke gemeente heeft zijn eigen omgeving met eigen diensten en locaties.
+Docleas is een online afsprakensysteem specifiek ontwikkeld voor lokale besturen. Elke lokaal bestuur heeft zijn eigen omgeving met eigen diensten en locaties.
 
 ## Handleidingen per gebruikersrol
 
-Kies hieronder de handleiding die bij uw rol past:
-
-### Voor burgers
-**[Burgerhandleiding - Afspraak maken bij uw gemeente](burgerhandleiding.md)**
-
-Bent u een burger die een afspraak wil maken bij het gemeenteloket? Deze handleiding legt stap voor stap uit hoe u online een afspraak kunt inplannen.
-
-*Geen login vereist, is direct toegankelijk voor iedereen*
-
----
+Kies hieronder de handleiding die bij jouw rol past:
 
 ### Voor gemeentemedewerkers
 
 #### Onthaalmedewerkers
 **Onthaalhandleiding** *(Binnenkort beschikbaar)*
 
-Voor medewerkers die burgers ontvangen en aanmelden bij aankomst, afspraken maken en beheren via het Onthaal gedeelte.
+Voor medewerkers die burgers ontvangen en aanmelden bij aankomst, afspraken maken en beheren via de Onthaal module.
 
 #### Loketmedewerkers
 **Lokethandleiding** *(Binnenkort beschikbaar)*
 
-Voor loketmedewerkers die afspraken beheren en agenda's raadplegen via de Backoffice-app.
+Voor loketmedewerkers die afspraken beheren en agenda's raadplegen via de Agenda module.
 
 #### Dienstbeheerders
 **[Beheerdershandleiding](dienstbeheerders/index.md)**
 
-Voor dienstbeheerders met uitgebreide rechten die agenda's, werkschema's en producten aanmaken en beheren via de Backoffice-app.
+Voor dienstbeheerders met uitgebreide rechten die agenda's, werkschema's en producten aanmaken en beheren via de Agenda module.
+
+**[De Burgerflow - Werking en configuratie](burgerflow/index.md)**
+
+Overzicht van hoe burgers een afspraak inplannen, met per stap een link naar de bijbehorende configuratie.
 
 ---
 
@@ -55,10 +50,28 @@ Voor vragen of problemen kunt u contact opnemen met:
 
 ---
 
+## Woordenlijst
+
+Hieronder vind je een overzicht van veelgebruikte termen binnen Docleas.
+
+| Term | Betekenis |
+|------|-----------|
+| Agenda | De planning van afspraken voor een loket of medewerker. |
+| Burgerflow | De publieke wizard waarmee burgers stap voor stap een afspraak inplannen. Geen login vereist. |
+| Dienstbeheerder | Medewerker met uitgebreide rechten die agenda's, werkschema's en producten beheert. |
+| Loketmedewerker | Medewerker die afspraken beheert en agenda's raadpleegt via de Backoffice-app. |
+| Onthaal module | De webapplicatie waarmee onthaalmedewerkers burgers aanmelden en afspraken beheren. |
+| Agenda module | De webapplicatie waarmee medewerkers afspraken beheren. Hiermee weken dienstbeheerders en loketmedewerkers|
+| Onthaalmedewerker | Medewerker die burgers ontvangt, aanmeldt en afspraken beheert via de Onthaal-app. |
+| Product | Een product of dienst die het lokaal bestuur aanbiedt via Docleas (bijv. identiteitskaart, rijbewijs). |
+| Werkschema | De beschikbaarheid van een loket of medewerker, op basis waarvan afspraken worden ingepland. |
+
+---
+
 ## Documenthistorie
 
 Deze documentatie wordt voortdurend bijgewerkt op basis van nieuwe features en wijzigingen in het platform. Raadpleeg de [Release Notes](../Releases/) voor een overzicht van alle wijzigingen per versie.
 
 ---
 
-*Laatst bijgewerkt: 16 februari 2026*
+*Laatst bijgewerkt: 17 februari 2026*

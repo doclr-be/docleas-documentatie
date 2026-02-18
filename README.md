@@ -43,7 +43,8 @@ Tickets/          - Alle tickets (TICK-XXX.md)
 IntegrationTests/ - Integratie tests per ticket
 Documentation/    - Documentatie (Markdown bestanden)
   ├── index.md                    - Hoofdpagina
-  ├── burgerhandleiding.md        - Voor burgers
+  ├── burgerflow/                 - De Burgerflow (werking en configuratie)
+  │   └── index.md
   ├── technische-documentatie.md  - Voor developers
   └── dienstbeheerders/           - Voor dienstbeheerders
       ├── index.md

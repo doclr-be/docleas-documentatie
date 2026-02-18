@@ -18,8 +18,8 @@
 
 * [Home](/)
 
-* **Voor burgers**
-  * [Burgerhandleiding](burgerhandleiding.md)
+* **De Burgerflow**
+  * [Werking en configuratie](burgerflow/index.md)
 
 * **Voor dienstbeheerders**
   * [Overzicht](dienstbeheerders/index.md)
