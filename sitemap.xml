@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Home -->
+  <url>
+    <loc>https://doclr-be.github.io/docleas-documentatie/</loc>
+    <lastmod>2026-02-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- De Burgerflow -->
+  <url>
+    <loc>https://doclr-be.github.io/docleas-documentatie/burgerflow/</loc>
+    <lastmod>2026-02-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Voor Dienstbeheerders -->
+  <url>
+    <loc>https://doclr-be.github.io/docleas-documentatie/dienstbeheerders/</loc>
+    <lastmod>2026-02-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://doclr-be.github.io/docleas-documentatie/dienstbeheerders/gemeente-instellingen</loc>
+    <lastmod>2026-02-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Producten -->
+  <url>
+    <loc>https://doclr-be.github.io/docleas-documentatie/dienstbeheerders/producten/algemene-werking</loc>
+    <lastmod>2026-02-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://doclr-be.github.io/docleas-documentatie/dienstbeheerders/producten/producten-beheren</loc>
+    <lastmod>2026-02-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://doclr-be.github.io/docleas-documentatie/dienstbeheerders/producten/algemene-instellingen</loc>
+    <lastmod>2026-02-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://doclr-be.github.io/docleas-documentatie/dienstbeheerders/producten/teksten</loc>
+    <lastmod>2026-02-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://doclr-be.github.io/docleas-documentatie/dienstbeheerders/producten/velden</loc>
+    <lastmod>2026-02-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://doclr-be.github.io/docleas-documentatie/dienstbeheerders/producten/beschikbaarheden</loc>
+    <lastmod>2026-02-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://doclr-be.github.io/docleas-documentatie/dienstbeheerders/producten/groepen</loc>
+    <lastmod>2026-02-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://doclr-be.github.io/docleas-documentatie/dienstbeheerders/producten/structuur</loc>
+    <lastmod>2026-02-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://doclr-be.github.io/docleas-documentatie/dienstbeheerders/producten/overzichtspagina</loc>
+    <lastmod>2026-02-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Agenda's -->
+  <url>
+    <loc>https://doclr-be.github.io/docleas-documentatie/dienstbeheerders/agendas</loc>
+    <lastmod>2026-02-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Werkschema's -->
+  <url>
+    <loc>https://doclr-be.github.io/docleas-documentatie/dienstbeheerders/werkschemas/</loc>
+    <lastmod>2026-02-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Gebruikers -->
+  <url>
+    <loc>https://doclr-be.github.io/docleas-documentatie/dienstbeheerders/gebruikers</loc>
+    <lastmod>2026-02-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Statistieken -->
+  <url>
+    <loc>https://doclr-be.github.io/docleas-documentatie/dienstbeheerders/statistieken</loc>
+    <lastmod>2026-02-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- FAQ -->
+  <url>
+    <loc>https://doclr-be.github.io/docleas-documentatie/dienstbeheerders/faq</loc>
+    <lastmod>2026-02-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Technische Documentatie -->
+  <url>
+    <loc>https://doclr-be.github.io/docleas-documentatie/technische-documentatie</loc>
+    <lastmod>2026-02-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+</urlset>
