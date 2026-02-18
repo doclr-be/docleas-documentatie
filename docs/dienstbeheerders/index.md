@@ -37,7 +37,7 @@ Alles over het beheren van producten (diensten) die burgers kunnen boeken:
 ### 3. [Agenda's](agendas.md)
 Agenda's aanmaken en beheren voor loketten en medewerkers.
 
-### 4. [Werkschema](werkschema.md)
+### 4. [Werkschema](werkschemas/index.md)
 Werkschema's configureren om de beschikbaarheid van loketten en medewerkers in te stellen.
 
 ### 5. [Gebruikers](gebruikers.md)

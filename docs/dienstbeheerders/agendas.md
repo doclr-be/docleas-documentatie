@@ -13,7 +13,7 @@ Een **agenda** is de planning van een loket of medewerker binnen Docleas. Elke a
 
 - [Terug naar handleiding dienstbeheerders](index.md)
 - [Vorige: Producten - Overzichtspagina](producten/overzichtspagina.md)
-- [Volgende: Werkschema](werkschema.md)
+- [Volgende: Werkschema](werkschemas/index.md)
 
 ---
 

@@ -90,7 +90,7 @@ De burger ziet een kalenderoverzicht met beschikbare tijdsloten voor het gekozen
 
 **Configuratie**
 De beschikbare tijdsloten worden bepaald door:
-- [Werkschema's](../dienstbeheerders/werkschema.md) - Wanneer loketten en medewerkers beschikbaar zijn
+- [Werkschema's](../dienstbeheerders/werkschemas/index.md) - Wanneer loketten en medewerkers beschikbaar zijn
 - [Producten - Beschikbaarheden](../dienstbeheerders/producten/beschikbaarheden.md) - Voor welke periodes een product boekbaar is
 
 ---
@@ -128,7 +128,7 @@ De inhoud van de bevestigingsmail stel je in via [Gemeente-instellingen](../dien
 | Productkeuze | [Producten beheren](../dienstbeheerders/producten/producten-beheren.md), [Groepen](../dienstbeheerders/producten/groepen.md) |
 | Productinformatie | [Producten - Teksten](../dienstbeheerders/producten/teksten.md) |
 | Locatiekeuze | [Agenda's](../dienstbeheerders/agendas.md) |
-| Tijdstipkeuze | [Werkschema's](../dienstbeheerders/werkschema.md), [Beschikbaarheden](../dienstbeheerders/producten/beschikbaarheden.md) |
+| Tijdstipkeuze | [Werkschema's](../dienstbeheerders/werkschemas/index.md), [Beschikbaarheden](../dienstbeheerders/producten/beschikbaarheden.md) |
 | Gegevens invullen | [Producten - Velden](../dienstbeheerders/producten/velden.md) |
 | Bevestiging | [Gemeente-instellingen](../dienstbeheerders/gemeente-instellingen.md) |
 

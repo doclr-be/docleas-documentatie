@@ -50,7 +50,8 @@ Documentation/    - Documentatie (Markdown bestanden)
       ├── index.md
       ├── gemeente-instellingen.md
       ├── agendas.md
-      ├── werkschema.md
+      ├── werkschemas/
+│   └── index.md
       ├── gebruikers.md
       ├── statistieken.md
       ├── faq.md

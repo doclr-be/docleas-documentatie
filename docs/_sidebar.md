@@ -37,7 +37,7 @@
     * [Overzichtspagina](dienstbeheerders/producten/overzichtspagina.md)
 
   * [Agenda's](dienstbeheerders/agendas.md)
-  * [Werkschema](dienstbeheerders/werkschema.md)
+  * [Werkschema's](dienstbeheerders/werkschemas/index.md)
   * [Gebruikers](dienstbeheerders/gebruikers.md)
   * [Statistieken](dienstbeheerders/statistieken.md)
   * [FAQ](dienstbeheerders/faq.md)
