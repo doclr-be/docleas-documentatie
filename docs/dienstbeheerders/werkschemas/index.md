@@ -36,13 +36,6 @@ Klik op **Nieuw werkschema** bovenaan de linkerzijbalk om een werkschema aan te 
 
 ![Nieuw werkschema](werkschema_nieuw.png ':size=500 :class=center-image')
 
-Vul de volgende velden in:
-
-| Veld | Beschrijving |
-|------|-------------|
-| Vanaf | De startdatum van het werkschema |
-| Agenda | De agenda waarvoor je het werkschema aanmaakt |
-
 Klik op **Toevoegen** om het werkschema aan te maken. Het nieuwe werkschema verschijnt daarna in de lijst aan de linkerzijde.
 
 > Een agenda kan meerdere werkschema's hebben met verschillende startdata. Het systeem past automatisch het juiste werkschema toe op basis van de datum van de afspraak.
@@ -88,7 +81,7 @@ Klik op **+ Voeg week toe** naast de weektabs.
 
 ![Week toevoegen](werkschema_week_toevoegen.png ':size=500 :class=center-image')
 
-Bevestig via **Bevestig**. De nieuwe week wordt toegevoegd als een lege week die je daarna kunt invullen.
+Klik op **Bevestig**. De nieuwe week wordt toegevoegd als een lege week die je daarna kunt invullen.
 
 ### Week verwijderen
 
