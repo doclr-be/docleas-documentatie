@@ -27,5 +27,12 @@
   * [Statistieken](dienstbeheerders/statistieken.md)
   * [FAQ](dienstbeheerders/faq.md)
 
+* **Mijn Burger Profiel**
+  * [Overzicht](mijn-burger-profiel/index.md)
+  * [Global Header](mijn-burger-profiel/global-header/index.md)
+    * [Global Header Validatie](mijn-burger-profiel/global-header/global-header-validatie.md)
+  * [Notificaties](mijn-burger-profiel/notificaties.md)
+  * [Afspraak maken](mijn-burger-profiel/afspraak-maken.md)
+
 * **Technisch**
   * [Technische documentatie](technische-documentatie.md)

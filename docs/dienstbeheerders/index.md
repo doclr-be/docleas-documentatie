@@ -30,7 +30,7 @@ Alles over het beheren van producten (diensten) die burgers kunnen boeken:
   - [2.2.2. Teksten](producten/teksten.md)
   - [2.2.3. Velden](producten/velden.md)
 - **[2.3. Beschikbaarheden](producten/beschikbaarheden.md)** - Bepaal wanneer producten beschikbaar zijn
-- **[2.4. Groepen](producten/groepen.md)** - Organiseer producten in groepen
+- **[2.4. Groepen](producten/groepen.md)** - Organiseer producten in groepen en stel dienstoverschrijdende tegeltjes in voor de burgerflow
 - **[2.5. Structuur](producten/structuur.md)** - Bekijk de structuur van producten per agenda
 - **[2.6. Overzichtspagina](producten/overzichtspagina.md)** - Beheer al je producten in één overzicht
 
@@ -57,4 +57,4 @@ Veelgestelde vragen en antwoorden voor dienstbeheerders.
 
 ---
 
-*Laatst bijgewerkt: 16 februari 2026*
+*Laatst bijgewerkt: 24 februari 2026*
