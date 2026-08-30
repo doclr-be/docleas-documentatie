@@ -1,9 +1,12 @@
 {
-  "name": "docleas-documentation",
+  "name": "docleas-documentation-vitepress",
   "version": "1.0.0",
-  "description": "Documentatie voor Docleas afsprakensysteem",
+  "description": "Documentatie voor Docleas afsprakensysteem (VitePress)",
+  "type": "module",
   "scripts": {
-    "docs:dev": "docsify serve docs"
+    "docs:dev": "vitepress dev .",
+    "docs:build": "vitepress build .",
+    "docs:preview": "vitepress preview ."
   },
   "keywords": [
     "documentation",
@@ -12,6 +15,10 @@
   "author": "Docleas Team",
   "license": "UNLICENSED",
   "devDependencies": {
-    "docsify-cli": "^4.4.4"
+    "vitepress": "^1.6.3",
+    "vitepress-plugin-llms": "^1.13.5"
+  },
+  "engines": {
+    "node": ">=20"
   }
 }

@@ -1,106 +1,86 @@
-# Docleas Documentatie
+# Docleas Documentatie — VitePress (proof of concept)
 
-Welkom bij de documentatie van Docleas, het online afsprakensysteem voor lokale besturen in België.
+Een VitePress-variant van de Docleas-documentatie, met een homepage in de stijl van
+https://commitlint.js.org/ en de content geherstructureerd volgens het
+[Diátaxis](https://diataxis.fr/)-model.
 
-## Documentatie bekijken
+## Draaien
 
-### Optie 1: Docsify (Eenvoudig, aanbevolen voor snel starten)
+VitePress vereist Node 18+ (getest met Node 20). Een oudere `nvm`-default (6.x) werkt niet.
 
 ```bash
-# Installeer dependencies
+cd docs/ViteDocs
+nvm use 20            # of een andere Node >= 18
 npm install
-
-# Start development server
-npm run docs:dev
-
-# Open http://localhost:3000
+npm run docs:dev      # http://localhost:5173
+npm run docs:build    # statische output in .vitepress/dist
+npm run docs:preview  # gebouwde site lokaal serveren
 ```
 
-### Optie 2: MkDocs Material (Professioneel, aanbevolen voor productie)
+## Contentstructuur
 
-```bash
-# Installeer Python dependencies
-pip install -r requirements.txt
+| Sectie | Diátaxis | Inhoud |
+|--------|----------|--------|
+| **Introductie** (`introductie/`) | oriëntatie | Wat is Docleas, rollen & rechten, kernbegrippen. |
+| **Opleidingen** (`opleidingen/`) | tutorials | Twee lineaire leerpaden: `loketmedewerker/` (5 lessen) en `dienstbeheerder/` (Basis 6 + Gevorderd 3 + checklist). Elke les leert één taak en linkt door naar de handleiding. |
+| **Handleiding** (`handleiding/`) | how-to + reference | De volledige naslag per module en scherm — de bestaande docsify-content, hierheen verplaatst. |
+| **Concepten** (`concepten/`) | explanation | Hoe beschikbaarheid berekend wordt, multi-tenant, rollen in detail, woordenlijst. |
+| **Support** (`support/`) | — | Contact, bekende problemen, iets melden, release notes. Staat bewust als laatste, zoals bij commitlint. |
 
-# Start development server
-npm run docs:mkdocs
+> De technische/architectuurdocumentatie (`technische-documentatie.md` uit docsify) is
+> voorlopig weggelaten. De brontekst staat nog in de git-historie als die terug moet.
 
-# Open http://localhost:8000
-```
+### Het "opleiding = ruggengraat"-principe
 
-### Alternatief: Zonder installatie (Python)
+Docleas is te uitgebreid om volledig in een opleiding te stoppen. Elke les is daarom kort,
+doelgericht ("Na deze les kan je…") en eindigt met **Meer weten**-links naar de handleiding.
+De handleiding blijft de volledige naslag; de opleiding dupliceert die inhoud niet.
 
-```bash
-cd docs
-python3 -m http.server 8000
-# Open http://localhost:8000
-```
+## Wat er veranderd is t.o.v. docsify
 
-## Projectstructuur
+| Onderdeel | docsify | VitePress |
+|-----------|---------|-----------|
+| Navigatie | `docs/_sidebar.md` (handmatig, ook in HTML gekopieerd) | één `.vitepress/config.ts`, per sectie een eigen sidebar, TypeScript-gecontroleerd |
+| Homepage | `_coverpage.md` | `index.md` met `layout: home` (hero + feature-cards) |
+| Prev/next-navigatie | handmatige `## Navigatie`-blokken per pagina | automatisch uit de sidebar (de handmatige blokken zijn verwijderd) |
+| Zoeken / paginering / copy-code / zoom | 4 losse plugins | ingebouwd in het standaardthema |
+| Dode links | niet gecontroleerd | build faalt op dode interne links |
+| Build | geen (statische bestanden) | `vitepress build` → `.vitepress/dist` |
 
-```
-Tickets/          - Alle tickets (TICK-XXX.md)
-IntegrationTests/ - Integratie tests per ticket
-Documentation/    - Documentatie (Markdown bestanden)
-  ├── index.md                    - Hoofdpagina
-  ├── burgerflow/                 - De Burgerflow (werking en configuratie)
-  │   └── index.md
-  ├── technische-documentatie.md  - Voor developers
-  └── dienstbeheerders/           - Voor dienstbeheerders
-      ├── index.md
-      ├── gemeente-instellingen.md
-      ├── agendas.md
-      ├── werkschemas/
-│   └── index.md
-      ├── gebruikers.md
-      ├── statistieken.md
-      ├── faq.md
-      └── producten/
-          ├── algemene-werking.md
-          ├── producten-beheren.md
-          ├── algemene-instellingen.md
-          ├── teksten.md
-          ├── velden.md
-          ├── beschikbaarheden.md
-          ├── groepen.md
-          ├── structuur.md
-          └── overzichtspagina.md
-Releases/         - Release notes per versie
-docs/             - Docsify website configuratie
-```
+### Inhoudelijke fixes tijdens de migratie
 
-## Hosting opties
+- Alle bestaande handleiding-content verplaatst van `dienstbeheerders/`, `burgerflow/`,
+  `mijn-burger-profiel/` naar `handleiding/…`; interne links aangepast.
+- Handmatige `## Navigatie`-blokken en docsify-beeldrichtlijnen
+  (`':size=400 :class=center-image'`) verwijderd.
+- Links die in docsify al stuk waren gecorrigeerd (`global-header.md` →
+  `./global-header/`; foute paden in `global-header/index.md`).
+- Screenshots verplaatst naar `public/screenshots/`; links `../../screenshots/` →
+  `/screenshots/`.
+- Links buiten deze map (`../Releases/`, `../Tickets/`, `../project-info.md`) worden
+  genegeerd via `ignoreDeadLinks`.
 
-Voor **gedetailleerde deployment instructies**, zie **[DEPLOYMENT.md](DEPLOYMENT.md)**.
+## Indexering (waarom we overstappen)
 
-### Snelle deployment:
+docsify is een client-side SPA: crawlers en AI-agents die geen JavaScript draaien zagen
+lege pagina's. VitePress rendert elke route als volledige HTML. Bovendien:
 
-| Optie | Commando | Live in | Kosten |
-|-------|----------|---------|--------|
-| **GitHub Pages** (Docsify) | Push `docs` folder | ~2 min | Gratis |
-| **GitHub Pages** (MkDocs) | `mkdocs gh-deploy` | ~2 min | Gratis |
-| **Netlify** | Connect repo via UI | ~3 min | Gratis |
-| **Vercel** | Connect repo via UI | ~3 min | Gratis |
+- `sitemap.xml` — gegenereerd uit `sitemap.hostname` in de config
+- `robots.txt` — in `public/`, verwijst naar de sitemap
+- canonical-link + Open Graph-tags per pagina — via `transformPageData` in de config
+- `llms.txt` + `llms-full.txt` — machineleesbare versie voor zoekmachines en de
+  Gemini-agent (`vitepress-plugin-llms`). Wijs de agent naar `/llms-full.txt`.
 
-**💡 Aanbeveling voor productie**:
-- **MkDocs Material + GitHub Pages**
-  - Professioneel design met tabs, search, dark mode
-  - Gratis hosting + automatische SSL
-  - One-command deployment: `mkdocs gh-deploy`
+## Deployment
 
-## Ontwikkeling
+Zie **[DEPLOYMENT.md](DEPLOY.md)**. Kort: DigitalOcean App Platform, build
+`npm ci && npm run docs:build`, output `.vitepress/dist`, `cleanUrls: false` zodat er geen
+rewrite-regels nodig zijn. `HOSTNAME` staat bovenaan `.vitepress/config.ts`.
 
-### Skills beschikbaar
+## Nog te doen
 
-- `/ticket` - Maak een nieuw ticket aan
-- `/integratie-test` - Schrijf integratie tests
-- `/documentatie` - Schrijf documentatie (indien beschikbaar)
-- `/release-notes` - Schrijf release notes
-
-### Taal
-
-Alle documentatie is in het Nederlands geschreven.
-
-## Licentie
-
-Interne documentatie voor Docleas.
+- Inhoud aanvullen: veel handleiding-pagina's zijn nog `DRAFT` of leeg (overgenomen uit docsify).
+- De Google `chat-messenger` chatbot opnieuw inbouwen (bijv. als component in `.vitepress/theme/`).
+- `ViteDocs/` naar de repo-root van `doclr-be/docleas-documentatie` verplaatsen en de
+  docsify-bestanden verwijderen.
+- DigitalOcean-component ombouwen van "serveer `docs/`" naar de build (zie DEPLOYMENT.md).
