@@ -6,7 +6,6 @@ maar de ene is visueel en snel, de andere handelt complexiteit voor je af.
 <Video
   src="https://assets-acc.doclr.be/docleas-assets/documentation/videos/twee-manieren-van-werken.mp4"
   poster="https://assets-acc.doclr.be/docleas-assets/documentation/videos/twee-manieren-van-werken.png"
-  captions="/videos/twee-manieren-van-werken.nl.vtt"
   title="Onthaal en agenda"
 />
 
