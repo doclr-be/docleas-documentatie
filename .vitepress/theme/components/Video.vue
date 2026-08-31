@@ -36,13 +36,13 @@ const props = withDefaults(defineProps<Props>(), {
       :crossorigin="crossorigin"
     >
       <source :src="src" type="video/mp4" />
+      <!-- geen `default`: ondertiteling staat uit tot de kijker ze aanzet -->
       <track
         v-if="captions"
         kind="captions"
         :src="captions"
         :srclang="lang"
         :label="captionsLabel"
-        default
       />
       <p>
         Je browser kan deze video niet afspelen.
