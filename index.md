@@ -13,8 +13,8 @@ hero:
       text: Wat is Docleas?
       link: /introductie/
     - theme: alt
-      text: Opleiding loketmedewerker
-      link: /opleidingen/loketmedewerker/
+      text: Opleiding gebruikers
+      link: /opleidingen/gebruiker/
     - theme: alt
       text: Opleiding dienstbeheerder
       link: /opleidingen/dienstbeheerder/
@@ -26,20 +26,20 @@ features:
     link: /introductie/
     linkText: Begin hier
   - title: Opleidingen
-    details: Curriculumpaden die je van nul naar zelfstandig werken brengen — één voor loketmedewerkers, één voor dienstbeheerders.
+    details: Aparte opleidingen voor medewerkers en voor dienstbeheerders.
     icon: 🎓
     link: /opleidingen/
-    linkText: Kies je pad
+    linkText: Snelle start
   - title: Handleiding
-    details: Naslag per module en per scherm — voor wie een specifieke taak wil opzoeken.
+    details: Documentatie per module, voor wie een specifieke taak wil opzoeken.
     icon: 🗂️
     link: /handleiding/
     linkText: Naar de handleiding
-  - title: Concepten
-    details: Hoe beschikbaarheid berekend wordt, multi-tenant, rollen in detail en de woordenlijst.
-    icon: 🧩
-    link: /concepten/
-    linkText: Achtergrond
+  - title: Support
+    details: Contactgegevens, bekende problemen en release notes.
+    icon: 🛟
+    link: /support/
+    linkText: Hulp nodig?
 ---
 
 ## Over Docleas

@@ -14,7 +14,8 @@ export default defineConfig({
   // site op elke statische host werkt zonder extra rewrite-regels (zoals commitlint.js.org).
   cleanUrls: false,
   lastUpdated: true,
-  srcExclude: ['README.md', 'DEPLOY.md'],
+  // 'concepten/**' staat klaar maar gaat nog niet mee naar de site.
+  srcExclude: ['README.md', 'DEPLOY.md', 'concepten/**'],
   ignoreDeadLinks: [
     // links naar bestanden buiten deze docs-map (Releases, Tickets, project-info)
     /\.\.\//,
@@ -31,6 +32,18 @@ export default defineConfig({
   },
 
   head: [
+    ['link', { rel: 'icon', type: 'image/png', href: '/favicon.png' }],
+    ['link', { rel: 'apple-touch-icon', href: '/favicon.png' }],
+    // Huisstijl-lettertypes (zelfde als docleas.eu): Raleway = tekst, Montserrat = titels
+    ['link', { rel: 'preconnect', href: 'https://fonts.googleapis.com' }],
+    ['link', { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }],
+    [
+      'link',
+      {
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Raleway:wght@400;500;600;700&display=swap',
+      },
+    ],
     ['meta', { property: 'og:type', content: 'website' }],
     ['meta', { property: 'og:site_name', content: 'Docleas Documentatie' }],
     ['meta', { name: 'robots', content: 'index, follow' }],
@@ -41,6 +54,12 @@ export default defineConfig({
       .replace(/(^|\/)index\.md$/, '$1') // .../index.md -> .../
       .replace(/\.md$/, '.html')
     const canonical = `${HOSTNAME}/${path}`
+
+    // Sectiekleur: eerste padsegment -> class op de pagina (zie custom.css).
+    const section = pageData.relativePath.split('/')[0]
+    if (['introductie', 'opleidingen', 'handleiding', 'concepten', 'support'].includes(section)) {
+      pageData.frontmatter.pageClass = `sec-${section}`
+    }
 
     const description =
       (pageData.frontmatter.description as string | undefined) ??
@@ -59,7 +78,7 @@ export default defineConfig({
   },
 
   themeConfig: {
-    logo: '/logo.png',
+    logo: { src: '/logo.png', alt: 'Docleas' },
 
     search: {
       provider: 'local',
@@ -83,7 +102,6 @@ export default defineConfig({
       { text: 'Introductie', link: '/introductie/' },
       { text: 'Opleidingen', link: '/opleidingen/' },
       { text: 'Handleiding', link: '/handleiding/' },
-      { text: 'Concepten', link: '/concepten/' },
       { text: 'Support', link: '/support/' },
     ],
 
@@ -102,15 +120,17 @@ export default defineConfig({
       '/opleidingen/': [
         { text: 'Opleidingen', link: '/opleidingen/' },
         {
-          text: 'Opleiding loketmedewerker',
+          text: 'Opleiding gebruikers',
           collapsed: false,
           items: [
-            { text: 'Overzicht', link: '/opleidingen/loketmedewerker/' },
-            { text: '1. Je agenda leren kennen', link: '/opleidingen/loketmedewerker/01-agenda-leren-kennen' },
-            { text: '2. Een afspraak inplannen', link: '/opleidingen/loketmedewerker/02-afspraak-inplannen' },
-            { text: '3. Een burger aanmelden', link: '/opleidingen/loketmedewerker/03-burger-aanmelden' },
-            { text: '4. Afspraken wijzigen, annuleren, no-show', link: '/opleidingen/loketmedewerker/04-afspraken-beheren' },
-            { text: '5. Klaar — checklist', link: '/opleidingen/loketmedewerker/05-klaar' },
+            { text: 'Overzicht', link: '/opleidingen/gebruiker/' },
+            { text: '1. Twee manieren van werken', link: '/opleidingen/gebruiker/01-twee-manieren-van-werken' },
+            { text: '2. De agenda', link: '/opleidingen/gebruiker/02-de-agenda' },
+            { text: '3. Een afspraak raadplegen', link: '/opleidingen/gebruiker/03-afspraak-raadplegen' },
+            { text: '4. Een afspraak maken', link: '/opleidingen/gebruiker/04-afspraak-maken' },
+            { text: '5. Verplaatsen en annuleren', link: '/opleidingen/gebruiker/05-verplaatsen-en-annuleren' },
+            { text: '6. Afwezigheid en beschikbaarheid', link: '/opleidingen/gebruiker/06-afwezigheid-en-beschikbaarheid' },
+            { text: '7. Werken via het Onthaal', link: '/opleidingen/gebruiker/07-werken-via-onthaal' },
           ],
         },
         {
@@ -139,7 +159,6 @@ export default defineConfig({
                 { text: '9. Statistieken lezen', link: '/opleidingen/dienstbeheerder/gevorderd/09-statistieken' },
               ],
             },
-            { text: 'Klaar — checklist', link: '/opleidingen/dienstbeheerder/klaar' },
           ],
         },
       ],
@@ -200,18 +219,7 @@ export default defineConfig({
         },
       ],
 
-      '/concepten/': [
-        {
-          text: 'Concepten',
-          items: [
-            { text: 'Overzicht', link: '/concepten/' },
-            { text: 'Hoe beschikbaarheid berekend wordt', link: '/concepten/beschikbaarheid' },
-            { text: 'Multi-tenant', link: '/concepten/multi-tenant' },
-            { text: 'Rollen en rechten in detail', link: '/concepten/rollen-en-rechten' },
-            { text: 'Woordenlijst', link: '/concepten/woordenlijst' },
-          ],
-        },
-      ],
+      // '/concepten/': tijdelijk niet op de site — zie srcExclude bovenaan.
 
       '/support/': [
         {

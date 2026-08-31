@@ -7,14 +7,12 @@ Hier lees je hoe je hulp krijgt.
 
 | Kanaal | Waarvoor |
 |--------|----------|
-| **Functionele vragen** | *(contactgegevens volgen)* — vragen over gebruik, configuratie, of "hoe pak ik dit aan". |
-| **Technische support** | *(contactgegevens volgen)* — storingen, foutmeldingen, integraties. |
+| **Functionele vragen** | *(contactgegevens volgen)*, vragen over gebruik, configuratie, of "hoe pak ik dit aan". |
+| **Technische support** | *(contactgegevens volgen)*, storingen, foutmeldingen, integraties. |
 
 ## Voor je contact opneemt
 
 - Kijk of je situatie bij [Bekende problemen](/support/bekende-problemen) staat.
-- Bij "geen vrije tijdsloten": loop eerst de debug-volgorde in
-  [Hoe beschikbaarheid berekend wordt](/concepten/beschikbaarheid) na.
 
 ## Iets melden
 
@@ -23,4 +21,4 @@ kunnen onderzoeken.
 
 ## Overige
 
-- [Release notes](/support/release-notes) — wat er per versie verandert.
+- [Release notes](/support/release-notes), wat er per versie verandert.

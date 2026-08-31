@@ -6,6 +6,16 @@
  * brand-1 = links en tekst (iets donkerder voor voldoende contrast op wit)
  */
 :root {
+  /* Huisstijl-typografie (zoals docleas.eu): Raleway voor tekst, Montserrat voor titels.
+     De fonts worden geladen via <link> in config.ts (head). */
+  --vp-font-family-base: 'Raleway', ui-sans-serif, system-ui, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, sans-serif;
+  --vp-font-family-heading: 'Montserrat', var(--vp-font-family-base);
+
+  /* Bredere zijbalk zodat "Docleas Documentatie" naast het logo past
+     zonder de rand te kruisen (standaard is 272px). */
+  --vp-sidebar-width: 320px;
+
   --vp-c-brand-1: #226fa8;
   --vp-c-brand-2: #2877ae;
   --vp-c-brand-3: #2d85c3;
@@ -69,4 +79,99 @@
   --vp-c-brand-3: #2d85c3;
   --vp-c-brand-soft: rgba(45, 133, 195, 0.22);
   --vp-c-brand-darker: #8cc6ec;
+}
+
+/**
+ * Op zeer brede schermen (>= 1440px) centreert het standaardthema de zijbalk mee met
+ * de content, wat een grote lege marge links geeft. Hieronder pinnen we de zijbalk
+ * (en het bijhorende logo-blok in de navbar) tegen de linkerrand, even breed als
+ * --vp-sidebar-width, zodat de titel binnen de rand blijft.
+ */
+@media (min-width: 1440px) {
+  .VPSidebar,
+  .VPNavBar.has-sidebar .title {
+    padding-left: 32px !important;
+    width: var(--vp-sidebar-width) !important;
+  }
+
+  /* Trek het logo/titel-blok naar links zodat de volledige naam binnen de rand valt. */
+  .VPNavBar.has-sidebar .title {
+    margin-left: -24px !important;
+  }
+}
+
+/* Titels in Montserrat (tekst blijft Raleway via --vp-font-family-base) */
+.vp-doc h1,
+.vp-doc h2,
+.vp-doc h3,
+.vp-doc h4,
+.vp-doc h5,
+.vp-doc h6,
+.VPHomeHero .name,
+.VPHomeHero .text,
+.VPFeature .title,
+.VPNavBarTitle .title {
+  font-family: var(--vp-font-family-heading);
+}
+
+/* Raleway 400 oogt lichter dan Inter; iets steviger voor lopende tekst */
+.vp-doc p,
+.vp-doc li {
+  font-weight: 450;
+}
+
+/* ---- Homepage: feature-blokjes met lichte Docleas-tint + gekleurde rand, zwarte tekst ---- */
+/* 1 Introductie = blauw · 2 Opleidingen = groen · 3 Handleiding = geel · 4 Concepten = grijs */
+.VPHomeFeatures .items .item:nth-child(1) .VPFeature { --dc: #2880c0; }
+.VPHomeFeatures .items .item:nth-child(2) .VPFeature { --dc: #88c040; }
+.VPHomeFeatures .items .item:nth-child(3) .VPFeature { --dc: #f0c808; }
+.VPHomeFeatures .items .item:nth-child(4) .VPFeature { --dc: #686868; }
+
+.VPHomeFeatures .items .item .VPFeature {
+  background-color: color-mix(in srgb, var(--dc) 9%, var(--vp-c-bg-soft));
+  border-color: var(--dc);
+}
+.VPHomeFeatures .items .item .VPFeature .icon {
+  background-color: color-mix(in srgb, var(--dc) 22%, var(--vp-c-bg-soft));
+}
+/* eenvoudige onderlijn onder de titel in de kaartkleur (via box-shadow) */
+.VPHomeFeatures .items .item .VPFeature .title {
+  display: inline-block;
+  box-shadow: 0 2px 0 var(--dc);
+}
+/* link-tekst in een donkere variant van de kaartkleur i.p.v. standaard blauw */
+.VPHomeFeatures .items .item .VPFeature .link-text-value {
+  color: color-mix(in srgb, var(--dc) 45%, var(--vp-c-text-1));
+  font-weight: 600;
+}
+.VPHomeFeatures .items .item .VPFeature.link:hover {
+  border-color: var(--dc);
+  background-color: color-mix(in srgb, var(--dc) 15%, var(--vp-c-bg-soft));
+}
+
+/* ============================================================
+   Sectiekleur per pagina: alleen een onderlijn onder de titels.
+   Class op .Layout via transformPageData -> frontmatter.pageClass.
+   Introductie = blauw · Opleidingen = groen · Handleiding = geel · Concepten/Support = grijs
+   ============================================================ */
+:root            { --dc: var(--vp-c-brand-3); }
+.sec-introductie { --dc: #2880c0; }
+.sec-opleidingen { --dc: #88c040; }
+.sec-handleiding { --dc: #f0c808; }
+.sec-concepten,
+.sec-support     { --dc: #686868; }
+.dark .sec-concepten,
+.dark .sec-support { --dc: #8a8a8a; }
+
+/* Alle titels: onderlijn in de sectiekleur, tekstbreed.
+   width:fit-content houdt de titel op zijn eigen regel (geen inline-block-samenloop). */
+.vp-doc :is(h1, h2, h3, h4, h5, h6) {
+  width: fit-content;
+  max-width: 100%;
+  box-shadow: 0 2px 0 var(--dc);
+}
+/* Geen dubbele lijn: de standaard-streep boven h2 vervalt. */
+.vp-doc h2 {
+  border-top: 0;
+  padding-top: 0;
 }

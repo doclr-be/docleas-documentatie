@@ -29,7 +29,7 @@ Bij het aanmaken van een gebruiker vul je meteen alles in één formulier in: ge
 2. Navigeer naar **Gebruikers**
 3. Klik rechtsboven op **+**
 4. Vul **e-mail**, **voornaam** en **achternaam** in
-5. Kies een **rol** — verplicht. Kies indien nodig de bijhorende **dienst**. Via **+ Rol toevoegen** ken je bijkomende rollen toe
+5. Kies een **rol**, verplicht. Kies indien nodig de bijhorende **dienst**. Via **+ Rol toevoegen** ken je bijkomende rollen toe
 6. Vink optioneel de modules aan waartoe de gebruiker toegang krijgt (**Agendamodule**, **Klantgeleiding**) en geef een startdatum (en eventueel einddatum) op
 7. Klik op **Toevoegen**
 
@@ -38,7 +38,7 @@ Bij het aanmaken van een gebruiker vul je meteen alles in één formulier in: ge
 ## Een rol toekennen (bestaande gebruiker)
 
 1. Ga naar **Gebruikers** en klik naast de gebruiker op **+**
-2. Kies de rol — **LoketMedewerker**, **Onthaal**, **Deskundige**, **Dienstbeheerder** of **Applicatiebeheerder** 
+2. Kies de rol, **LoketMedewerker**, **Onthaal**, **Deskundige**, **Dienstbeheerder** of **Applicatiebeheerder** 
 3. Kies, indien de rol dit vereist, de dienst waarvoor de rol geldt
 4. Klik op **Toevoegen**
 
@@ -64,7 +64,7 @@ Docleas heeft geen eenvoudige aan/uit-schakelaar voor een gebruiker. In plaats d
 
 ![Dialoog "Activiteitsperiodes" met de start- en einddatum per module](/screenshots/dienstbeheerders/31_gebruikers_activiteitsperiodes.jpg)
 
-Een gebruiker zonder actieve periode voor een module heeft op dat moment geen toegang meer tot die module — de gebruikerslijst toont dit met een rode "Actief tot"-melding. Dit is bijvoorbeeld bruikbaar bij langdurige afwezigheid of een tijdelijke contractwissel, zonder de gebruiker meteen volledig te verwijderen.
+Een gebruiker zonder actieve periode voor een module heeft op dat moment geen toegang meer tot die module, de gebruikerslijst toont dit met een rode "Actief tot"-melding. Dit is bijvoorbeeld bruikbaar bij langdurige afwezigheid of een tijdelijke contractwissel, zonder de gebruiker meteen volledig te verwijderen.
 
 ## Toegang direct afsluiten
 
@@ -89,7 +89,7 @@ Dit verwijdert alle rollen van de gebruiker en de koppeling met je gemeente. Het
 
 ## Wijzigingen opvolgen (auditlog)
 
-Elke wijziging aan gebruikers — toevoegen, rol toekennen of verwijderen, toegangsperiode wijzigen, gebruiker verwijderen — wordt gelogd. Je vindt de geschiedenis via **Gebruikers > Auditlog**.
+Elke wijziging aan gebruikers, toevoegen, rol toekennen of verwijderen, toegangsperiode wijzigen, gebruiker verwijderen, wordt gelogd. Je vindt de geschiedenis via **Gebruikers > Auditlog**.
 
 ---
 

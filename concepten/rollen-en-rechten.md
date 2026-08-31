@@ -41,5 +41,5 @@ gemeente-instellingen, statistieken. Dit is de enige rol die geen dienst vereist
 
 ## Wijzigingen opvolgen
 
-Elke wijziging aan rollen en toegang wordt gelogd — zie **Gebruikers → Auditlog** en
+Elke wijziging aan rollen en toegang wordt gelogd, zie **Gebruikers → Auditlog** en
 [Gebruikers](/handleiding/gebruikers) in de handleiding.

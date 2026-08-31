@@ -1,14 +1,9 @@
-# Les 7 — Groepen en dienstoverschrijdend werken
-
-::: tip Na deze les kan je
-Producten ordenen in groepen, tegeltjes maken op de startpagina van de burgerflow, en een
-groep loskoppelen van één dienst. **± 25 min**
-:::
+# Groepen en dienstoverschrijdend werken
 
 ## Twee toepassingen van groepen
 
-1. **Ordening binnen een beschikbaarheid** — producten netjes gegroepeerd in het werkschema.
-2. **Tegeltjes in de burgerflow** — een groep met een **volgnummer** verschijnt als
+1. **Ordening binnen een beschikbaarheid**, producten netjes gegroepeerd in het werkschema.
+2. **Tegeltjes in de burgerflow**, een groep met een **volgnummer** verschijnt als
    hoofdtegeltje op de startpagina.
 
 Groepen kunnen genest worden: een groep bevat subgroepen, die weer producten of subgroepen bevatten.
@@ -26,8 +21,8 @@ Liever een niveau extra dan te veel tegeltjes op één scherm.
 
 ## Dienstoverschrijdende groepen
 
-Standaard hangt een groep aan één dienst. Wil je een tegeltje *"Mobiliteit"* met **Rijbewijs**
-(Burgerzaken) én **Mindervalidekaart** (Sociaal Huis)?
+Standaard hangt een groep aan één dienst. Wil je een tegeltje *"Mobiliteit"* met
+**Rijbewijs** (Burgerzaken) én **Mindervalidekaart** (Sociaal Huis)?
 
 1. Open de groep en zet de toggle **Dienstoverschrijdend** aan.
 2. De gekoppelde dienst wordt leeggemaakt.
@@ -35,11 +30,11 @@ Standaard hangt een groep aan één dienst. Wil je een tegeltje *"Mobiliteit"* m
 
 **Beperkingen:**
 
-- Dienstoverschrijdende groepen kunnen **niet** in beschikbaarheden gebruikt worden — enkel
+- Dienstoverschrijdende groepen kunnen **niet** in beschikbaarheden gebruikt worden, enkel
   als tegeltje/groep in de burgerflow.
 - Je kan de toggle niet aanzetten zolang de groep in een beschikbaarheid gebruikt wordt.
 - Uitzetten kan pas als de groep leeg is; kies dan opnieuw een dienst.
 
-## Meer weten
+## Zie ook
 
-- [Producten — Groepen](/handleiding/producten/groepen) — volledige uitleg, visuele indicatie, foutmeldingen.
+- [Producten, Groepen](/handleiding/producten/groepen), volledige uitleg, visuele indicatie, foutmeldingen.

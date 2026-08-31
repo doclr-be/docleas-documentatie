@@ -14,6 +14,13 @@ De flow past zich aan aan je configuratie. Hoe meer je instelt, hoe meer de burg
 
 Dit document beschrijft welke stappen een burger doorloopt en hoe jij als lokaal bestuur elke stap kunt instellen.
 
+## Demo: een burger maakt een afspraak
+
+<Video
+  src="https://assets-acc.doclr.be/docleas-assets/documentation/videos/burger-maakt-afspraak-demo.mp4"
+  title="Een burger maakt een afspraak via de Burgerflow"
+/>
+
 ## Stappen in de Burgerflow
 
 De Burgerflow bestaat uit maximaal 7 stappen. Afhankelijk van je configuratie worden sommige stappen overgeslagen.

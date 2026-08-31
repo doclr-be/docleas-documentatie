@@ -22,7 +22,7 @@ npm run docs:preview  # gebouwde site lokaal serveren
 | Sectie | Diátaxis | Inhoud |
 |--------|----------|--------|
 | **Introductie** (`introductie/`) | oriëntatie | Wat is Docleas, rollen & rechten, kernbegrippen. |
-| **Opleidingen** (`opleidingen/`) | tutorials | Twee lineaire leerpaden: `loketmedewerker/` (5 lessen) en `dienstbeheerder/` (Basis 6 + Gevorderd 3 + checklist). Elke les leert één taak en linkt door naar de handleiding. |
+| **Opleidingen** (`opleidingen/`) | tutorials | Twee opleidingen met genummerde hoofdstukken: `gebruiker/` (Opleiding gebruikers — Agenda + Onthaal, 7 hoofdstukken) en `dienstbeheerder/` (Opleiding dienstbeheerder — Basis 6 + Gevorderd 3). Elk hoofdstuk behandelt één onderwerp en linkt door naar de handleiding. |
 | **Handleiding** (`handleiding/`) | how-to + reference | De volledige naslag per module en scherm — de bestaande docsify-content, hierheen verplaatst. |
 | **Concepten** (`concepten/`) | explanation | Hoe beschikbaarheid berekend wordt, multi-tenant, rollen in detail, woordenlijst. |
 | **Support** (`support/`) | — | Contact, bekende problemen, iets melden, release notes. Staat bewust als laatste, zoals bij commitlint. |
@@ -32,9 +32,35 @@ npm run docs:preview  # gebouwde site lokaal serveren
 
 ### Het "opleiding = ruggengraat"-principe
 
-Docleas is te uitgebreid om volledig in een opleiding te stoppen. Elke les is daarom kort,
-doelgericht ("Na deze les kan je…") en eindigt met **Meer weten**-links naar de handleiding.
+Docleas is te uitgebreid om volledig in een opleiding te stoppen. Elk hoofdstuk is daarom
+kort en behandelt één onderwerp, met **Zie ook**-links naar de handleiding voor het detail.
 De handleiding blijft de volledige naslag; de opleiding dupliceert die inhoud niet.
+
+## How-to video's
+
+Er is een `<Video>`-component (`.vitepress/theme/components/Video.vue`), bruikbaar in elke
+`.md`:
+
+```md
+<Video
+  src="https://<space>.<regio>.cdn.digitaloceanspaces.com/afspraak-inplannen.mp4"
+  poster="/videos/afspraak-inplannen.jpg"
+  title="Een afspraak inplannen voor een burger"
+  captions="/videos/afspraak-inplannen.nl.vtt"
+/>
+```
+
+- **MP4** → DigitalOcean Spaces + CDN (niet in git). Encodeer met `-movflags +faststart`.
+- **VTT** (WebVTT) → gewoon in `public/videos/` in de repo. Klein bestand, zelfde origin,
+  dus geen CORS nodig. De browser gebruikt `.vtt` voor de `<track>`; **`.srt` werkt niet**
+  in de browser — laat die weg of bied hem als download aan.
+- **Poster** (JPG) → `public/videos/`, of ook op Spaces.
+- Staat het `.vtt` toch op een ander domein, geef dan `crossorigin="anonymous"` mee en
+  configureer CORS op de Space.
+
+De component doet: responsive weergave, `controls`, geen autoplay, `preload="metadata"`,
+captions-track, en een download-fallback. De `title` wordt als echte tekst getoond
+(dus indexeerbaar en zichtbaar in `llms-full.txt`).
 
 ## Wat er veranderd is t.o.v. docsify
 

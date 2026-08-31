@@ -18,9 +18,9 @@ De rollen staan hierboven van meest beperkt naar meest volledig.
 
 Voor de documentatie splitsen we die rollen in twee groepen:
 
-- **Dagelijks gebruik** — LoketMedewerker, Onthaal, Deskundige. Je werkt *in* het systeem:
-  afspraken en agenda's. → [Opleiding loketmedewerker](/opleidingen/loketmedewerker/)
-- **Beheer & configuratie** — Dienstbeheerder, Applicatiebeheerder. Je zet het systeem *op*:
+- **Dagelijks gebruik**, LoketMedewerker, Onthaal, Deskundige. Je werkt *in* het systeem:
+  afspraken en agenda's. → [Opleiding gebruikers](/opleidingen/gebruiker/)
+- **Beheer & configuratie**, Dienstbeheerder, Applicatiebeheerder. Je zet het systeem *op*:
   producten, werkschema's, gebruikers, instellingen. → [Opleiding dienstbeheerder](/opleidingen/dienstbeheerder/)
 
 ## Toegang in de tijd
@@ -31,5 +31,4 @@ Docleas heeft geen simpele aan/uit-schakelaar per gebruiker. Toegang wordt gereg
 
 ## Meer weten
 
-- [Gebruikers beheren](/handleiding/gebruikers) — rollen toekennen, toegang afsluiten, auditlog.
-- [Rollen en rechten in detail](/concepten/rollen-en-rechten) — wat elke rol precies wel en niet mag.
+- [Gebruikers beheren](/handleiding/gebruikers), rollen toekennen, toegang afsluiten, auditlog.

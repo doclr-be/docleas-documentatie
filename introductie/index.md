@@ -28,7 +28,7 @@ werkschema's instellen en publiceren naar de burgerflow.
 
 ## Waar begin ik?
 
-- **Nieuw als medewerker aan een loket?** → [Opleiding loketmedewerker](/opleidingen/loketmedewerker/)
+- **Nieuw als medewerker aan een loket?** → [Opleiding gebruikers](/opleidingen/gebruiker/)
 - **Nieuw als dienstbeheerder?** → [Opleiding dienstbeheerder](/opleidingen/dienstbeheerder/)
 - **Iets specifieks opzoeken?** → [Handleiding](/handleiding/)
 - **Begrippen en achtergrond?** → [Rollen & rechten](/introductie/rollen-en-rechten) · [Kernbegrippen](/introductie/kernbegrippen)

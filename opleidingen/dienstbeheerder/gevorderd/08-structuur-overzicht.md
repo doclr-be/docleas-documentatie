@@ -1,9 +1,4 @@
-# Les 8 — Structuur en overzichtspagina
-
-::: tip Na deze les kan je
-De structuurpagina gebruiken om te controleren of je producten correct gekoppeld zijn, en
-de overzichtspagina gebruiken voor snel productbeheer. **± 15 min**
-:::
+# Structuur en overzichtspagina
 
 ## Structuurpagina
 
@@ -31,7 +26,7 @@ Gebruik dit om te controleren dat:
 en sortering. Hier vind je snel een product terug om te bewerken, en zie je in één oogopslag
 zichtbaarheid, boekbaarheid en koppelingen.
 
-## Meer weten
+## Zie ook
 
-- [Producten — Structuur](/handleiding/producten/structuur)
-- [Producten — Overzichtspagina](/handleiding/producten/overzichtspagina)
+- [Producten, Structuur](/handleiding/producten/structuur)
+- [Producten, Overzichtspagina](/handleiding/producten/overzichtspagina)

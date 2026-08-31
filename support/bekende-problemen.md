@@ -14,8 +14,6 @@ Meestal een configuratieketen die niet volledig sluit. Loop na, in deze volgorde
 5. Is alles **volgeboekt** of geblokkeerd door afwezigheden?
 6. Zit de datum binnen de **boekingstermijn** (niet te kort op voorhand, niet te ver vooruit)?
 
-Volledige uitleg: [Hoe beschikbaarheid berekend wordt](/concepten/beschikbaarheid).
-
 ## "Een medewerker kan niet inloggen / heeft geen toegang"
 
 - Controleer de **activiteitsperiodes** van de gebruiker (kalender-icoon bij Gebruikers).
@@ -34,5 +32,5 @@ Zie [Gebruikers](/handleiding/gebruikers).
 ## "Statistieken over no-shows kloppen niet"
 
 No-show- en annulatiecijfers zijn maar zo goed als de invoer. Zorg dat loketmedewerkers
-afspraken correct afsluiten — zie
-[Opleiding loketmedewerker, les 4](/opleidingen/loketmedewerker/04-afspraken-beheren).
+afspraken correct afsluiten, zie
+[Een afspraak raadplegen](/opleidingen/gebruiker/03-afspraak-raadplegen).
