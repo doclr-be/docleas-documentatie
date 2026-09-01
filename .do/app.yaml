@@ -11,7 +11,9 @@ static_sites:
       branch: main
       deploy_on_push: true
     source_dir: /
-    build_command: npm ci && npm run docs:build
+    # De node-js-buildpack installeert de dependencies (incl. devDependencies) al,
+    # dus hier géén 'npm ci' meer — dat was een dubbele install (~5s).
+    build_command: npm run docs:build
     output_dir: .vitepress/dist
     # GEEN catchall_document: dat zou 404.html met status 200 serveren (SPA-gedrag)
     # en is slecht voor indexering. Alle interne links zijn expliciete .html-bestanden.

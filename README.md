@@ -100,7 +100,7 @@ lege pagina's. VitePress rendert elke route als volledige HTML. Bovendien:
 ## Deployment
 
 Zie **[DEPLOYMENT.md](DEPLOY.md)**. Kort: DigitalOcean App Platform, build
-`npm ci && npm run docs:build`, output `.vitepress/dist`, `cleanUrls: false` zodat er geen
+`npm run docs:build`, output `.vitepress/dist`, `cleanUrls: false` zodat er geen
 rewrite-regels nodig zijn. `HOSTNAME` staat bovenaan `.vitepress/config.ts`.
 
 ## Nog te doen

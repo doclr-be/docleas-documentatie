@@ -16,7 +16,9 @@ DigitalOcean gewoon `/`.
 
 Meegeleverd en klaar:
 
-- `.node-version` (`20`) en `package.json` → `engines.node >= 20` — Node-versie voor de build
+- `.node-version` (`22`) en `package.json` → `engines.node 22.x` — Node-versie voor de build
+  (exact pinnen i.p.v. `>=20`: anders waarschuwt de buildpack over de brede range en kan
+  de Node-versie tussen builds verschuiven)
 - `.gitignore` — sluit `node_modules/`, `.vitepress/cache/`, `.vitepress/dist/` uit
 - `public/robots.txt`, `public/google3ea88998a5d1a313.html` (Search Console-verificatie)
 - `package-lock.json` — nodig voor `npm ci`
@@ -28,7 +30,7 @@ In het bestaande App → de static-site component → **Settings**:
 | Instelling | Waarde |
 |------------|--------|
 | Source Directory | `/` (of de submap met `package.json`) |
-| Build Command | `npm ci && npm run docs:build` |
+| Build Command | `npm run docs:build` (de node-js-buildpack installeert de deps al) |
 | Output Directory | `.vitepress/dist` |
 | Error Document | `404.html` |
 | Branch | de branch die je wil publiceren (auto-deploy bij elke push) |
