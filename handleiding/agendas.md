@@ -8,4 +8,4 @@ Een **agenda** is de planning van een loket of medewerker binnen Docleas. Elke a
 
 ---
 
-*Laatst bijgewerkt: 16 februari 2026*
+
