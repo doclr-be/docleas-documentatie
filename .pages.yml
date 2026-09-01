@@ -1,0 +1,97 @@
+# Pages CMS-configuratie — https://pagescms.org
+# Geeft een niet-technische redacteur een bewerk-UI in de browser bovenop deze repo.
+# Elke wijziging wordt een gewone commit op de gekozen branch.
+
+media:
+  input: public
+  output: /
+  # Uploads (screenshots) landen in public/ en zijn op de site bereikbaar als /screenshots/...
+  categories: [image]
+
+content:
+  - name: introductie
+    label: Introductie
+    type: collection
+    path: introductie
+    filename: '{primary}.md'
+    view:
+      fields: [name]
+    fields:
+      - name: body
+        label: Inhoud
+        type: rich-text
+        options:
+          format: markdown
+
+  - name: opleiding_gebruiker
+    label: Opleiding · Gebruiker
+    type: collection
+    path: opleidingen/gebruiker
+    filename: '{primary}.md'
+    fields:
+      - name: body
+        label: Inhoud
+        type: rich-text
+        options:
+          format: markdown
+
+  - name: opleiding_dienstbeheerder_basis
+    label: Opleiding · Dienstbeheerder · Basis
+    type: collection
+    path: opleidingen/dienstbeheerder/basis
+    filename: '{primary}.md'
+    fields:
+      - name: body
+        label: Inhoud
+        type: rich-text
+        options:
+          format: markdown
+
+  - name: opleiding_dienstbeheerder_gevorderd
+    label: Opleiding · Dienstbeheerder · Gevorderd
+    type: collection
+    path: opleidingen/dienstbeheerder/gevorderd
+    filename: '{primary}.md'
+    fields:
+      - name: body
+        label: Inhoud
+        type: rich-text
+        options:
+          format: markdown
+
+  - name: handleiding
+    label: Handleiding
+    type: collection
+    path: handleiding
+    subfolders: true
+    filename: '{primary}.md'
+    fields:
+      - name: body
+        label: Inhoud
+        type: rich-text
+        options:
+          format: markdown
+
+  - name: concepten
+    label: Concepten
+    type: collection
+    path: concepten
+    filename: '{primary}.md'
+    fields:
+      - name: body
+        label: Inhoud
+        type: rich-text
+        options:
+          format: markdown
+
+  - name: support
+    label: Support
+    type: collection
+    path: support
+    filename: '{primary}.md'
+    fields:
+      - name: body
+        label: Inhoud
+        type: rich-text
+        options:
+          format: markdown
