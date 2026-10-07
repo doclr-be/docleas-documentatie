@@ -175,3 +175,11 @@
   border-top: 0;
   padding-top: 0;
 }
+
+/* Frontmatter-'description' als lead onder de titel (zie markdown.config). */
+.vp-doc .page-description {
+  margin-top: 0.75rem;
+  font-size: 1.15rem;
+  line-height: 1.6;
+  color: var(--vp-c-text-2);
+}

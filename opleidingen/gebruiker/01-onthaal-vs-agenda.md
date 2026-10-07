@@ -1,4 +1,9 @@
-# Twee manieren van werken
+---
+description: Het verschil tussen agenda en het onthaal
+concepts: [agenda, onthaal]
+---
+
+# Onthaal vs agenda
 
 Docleas heeft twee manieren om met afspraken te werken. Ze leveren hetzelfde eindresultaat,
 maar de ene is visueel en snel, de andere handelt complexiteit voor je af.

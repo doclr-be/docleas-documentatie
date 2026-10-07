@@ -25,6 +25,24 @@ export default defineConfig({
     hostname: HOSTNAME,
   },
 
+  // Toon de frontmatter-'description' als lead-paragraaf onder de H1.
+  // VitePress rendert die zelf nergens; hier voegen we hem na de titel in.
+  markdown: {
+    config(md) {
+      const render = md.render.bind(md)
+      md.render = (src, env) => {
+        const html = render(src, env)
+        const desc = (env as any)?.frontmatter?.description
+        if (!desc || (env as any)?.frontmatter?.layout === 'home') return html
+        return html.replace(
+          '</h1>',
+          `</h1>\n<p class="page-description">${md.utils.escapeHtml(String(desc))}</p>`,
+        )
+      }
+      return md
+    },
+  },
+
   // llms.txt + llms-full.txt genereren — machineleesbare versie van de site,
   // bedoeld voor zoekmachines en AI-agents (grounding).
   vite: {
@@ -124,7 +142,7 @@ export default defineConfig({
           collapsed: false,
           items: [
             { text: 'Overzicht', link: '/opleidingen/gebruiker/' },
-            { text: '1. Twee manieren van werken', link: '/opleidingen/gebruiker/01-twee-manieren-van-werken' },
+            { text: '1. Onthaal vs agenda', link: '/opleidingen/gebruiker/01-onthaal-vs-agenda' },
             { text: '2. De agenda', link: '/opleidingen/gebruiker/02-de-agenda' },
             { text: '3. Een afspraak raadplegen', link: '/opleidingen/gebruiker/03-afspraak-raadplegen' },
             { text: '4. Een afspraak maken', link: '/opleidingen/gebruiker/04-afspraak-maken' },

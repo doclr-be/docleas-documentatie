@@ -12,7 +12,7 @@ de Agendamodule (en eventueel de Onthaal-/Klantgeleidingsmodule).
 
 ## Hoofdstukken
 
-1. [Twee manieren van werken](/opleidingen/gebruiker/01-twee-manieren-van-werken)
+1. [Onthaal vs agenda](/opleidingen/gebruiker/01-onthaal-vs-agenda)
 2. [De agenda](/opleidingen/gebruiker/02-de-agenda)
 3. [Een afspraak raadplegen](/opleidingen/gebruiker/03-afspraak-raadplegen)
 4. [Een afspraak maken](/opleidingen/gebruiker/04-afspraak-maken)

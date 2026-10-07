@@ -14,6 +14,15 @@ teksten voor de burger, in te vullen velden, een duur en beschikbaarheidsregels.
 De planning van één loket of medewerker. Afspraken worden op een agenda geboekt. Een
 product wordt aan één of meer agenda's gekoppeld.
 
+<ConceptGuides concept="agenda" />
+
+## Onthaal
+
+Snel en vlot afspraken inboeken voor verschillende diensten.
+
+<ConceptGuides concept="onthaal" />
+
+
 ## Werkschema
 
 Bepaalt **wanneer** een agenda beschikbaar is en voor welke producten, een uitgebreide

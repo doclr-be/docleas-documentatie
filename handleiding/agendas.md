@@ -1,3 +1,8 @@
+---
+description: Agenda's aanmaken en beheren, en hoe werkschema en beschikbaarheid eraan hangen.
+concepts: [agenda, werkschema, beschikbaarheid]
+---
+
 # Agenda's
 
 ## Overzicht
