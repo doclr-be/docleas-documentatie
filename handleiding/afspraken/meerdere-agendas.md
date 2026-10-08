@@ -87,7 +87,7 @@ De rollen wisselen: de oorspronkelijke hoofdafspraak wordt een deelname en omgek
 ## Zie ook
 
 - [Agenda's](/handleiding/agendas)
-- [Beschikbaarheid](/concepten/beschikbaarheid)
+- [Beschikbaarheid](/introductie/kernbegrippen#beschikbaarheid)
 
 ---
 
