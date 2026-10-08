@@ -184,7 +184,7 @@ export default defineConfig({
       '/handleiding/': [
         { text: 'Overzicht', link: '/handleiding/' },
         {
-          text: 'Configuratie',
+          text: 'Medewerker',
           collapsed: false,
           items: [
             { text: 'Gemeente-instellingen', link: '/handleiding/gemeente-instellingen' },
@@ -204,6 +204,14 @@ export default defineConfig({
               ],
             },
             { text: "Agenda's", link: '/handleiding/agendas' },
+            {
+              text: 'Afspraken',
+              link: '/handleiding/afspraken/',
+              collapsed: false,
+              items: [
+                { text: "Afspraken in meerdere agenda's", link: '/handleiding/afspraken/meerdere-agendas' },
+              ],
+            },
             { text: "Werkschema's", link: '/handleiding/werkschemas/' },
             { text: 'Gebruikers', link: '/handleiding/gebruikers' },
             { text: 'Statistieken', link: '/handleiding/statistieken' },

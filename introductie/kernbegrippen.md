@@ -1,6 +1,6 @@
 # Kernbegrippen
 
-De vijf begrippen hieronder komen overal in Docleas terug. Wie deze begrijpt, begrijpt
+De begrippen hieronder komen overal in Docleas terug. Wie deze begrijpt, begrijpt
 het grootste deel van het systeem.
 
 ## Product
@@ -15,6 +15,14 @@ De planning van één loket of medewerker. Afspraken worden op een agenda geboek
 product wordt aan één of meer agenda's gekoppeld.
 
 <ConceptGuides concept="agenda" />
+
+## Afspraak
+
+Een moment tussen een burger en het lokaal bestuur, geboekt voor één of meer producten op
+een agenda. Een burger maakt een afspraak via de burgerflow, een medewerker plant er een
+in via de agenda. Eén afspraak kan ook in de agenda van een collega staan.
+
+<ConceptGuides concept="afspraak" />
 
 ## Onthaal
 

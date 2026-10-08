@@ -24,6 +24,7 @@ export interface Concept {
 export const CONCEPTS = {
   product: { label: 'Product', link: '/introductie/kernbegrippen#product' },
   agenda: { label: 'Agenda', link: '/introductie/kernbegrippen#agenda' },
+  afspraak: { label: 'Afspraak', link: '/introductie/kernbegrippen#afspraak' },
   onthaal: { label: 'Onthaal', link: '/introductie/kernbegrippen#onthaal' },
   werkschema: { label: 'Werkschema', link: '/introductie/kernbegrippen#werkschema' },
   beschikbaarheid: {

@@ -5,13 +5,14 @@ Zoek je een specifieke taak op die je al begrijpt, dan ben je hier op de juiste 
 
 - Wil je Docleas leren gebruiken vanaf nul? Begin bij de [Opleidingen](/opleidingen/).
 
-## Configuratie (dienstbeheerder)
+## Medewerker
 
 | Onderwerp | Inhoud |
 |-----------|--------|
 | [Gemeente-instellingen](/handleiding/gemeente-instellingen) | Naam, logo, contactgegevens, taalinstellingen, termijnen en standaardteksten. |
 | [Producten](/handleiding/producten/algemene-werking) | Diensten die burgers kunnen boeken, werking, beheren, instellingen, teksten, velden, beschikbaarheden, groepen, structuur en overzichtspagina. |
 | [Agenda's](/handleiding/agendas) | De planning van loketten en medewerkers. |
+| [Afspraken](/handleiding/afspraken/) | Afspraken maken en beheren in de agenda, en de extra mogelijkheden rond afspraken |
 | [Werkschema's](/handleiding/werkschemas/) | Wanneer een agenda beschikbaar is en voor welke producten. |
 | [Gebruikers](/handleiding/gebruikers) | Medewerkers, rollen en toegang beheren. |
 | [Statistieken](/handleiding/statistieken) | Rapporten en dashboards over het gebruik van het afsprakensysteem. |
