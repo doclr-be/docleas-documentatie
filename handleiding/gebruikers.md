@@ -108,7 +108,7 @@ Wijzig je naam of e-mailadres van een bestaande gebruiker:
 | **Applicatiebeheerder** | Nee | Volledige toegang tot de agenda, gebruikers en instellingen |
 
 Een gebruiker kan meerdere rollen combineren, eventueel voor verschillende afdelingen (bv. Dienstbeheerder voor "Burgerzaken" en Deskundige voor "Milieu"). Zie ook [Rollen en rechten](/introductie/rollen-en-rechten).
-de gif
+
 ![Een rol toevoegen](/screenshots/dienstbeheerders/22_gebruikers_rol_toevoegen.gif)
 
 #### Een rol toekennen aan meerdere gebruikers

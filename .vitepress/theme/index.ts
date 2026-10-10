@@ -1,6 +1,7 @@
-import { h } from 'vue'
+import { h, nextTick, onMounted, watch } from 'vue'
 import DefaultTheme from 'vitepress/theme'
-import type { Theme } from 'vitepress'
+import { useRoute, type Theme } from 'vitepress'
+import mediumZoom, { type Zoom } from 'medium-zoom'
 import './custom.css'
 import Video from './components/Video.vue'
 import EditLink from './components/EditLink.vue'
@@ -19,6 +20,18 @@ export default {
       'doc-before': () => [h(Breadcrumb), h(ConceptTags)],
       'doc-footer-before': () => h(EditLink),
     }),
+  // Klik op een afbeelding met onderschrift (markdown-it-image-figures, zie config.ts) om ze
+  // groter te openen. Opnieuw koppelen na elke paginawissel (VitePress laadt zonder herladen).
+  setup() {
+    const route = useRoute()
+    let zoom: Zoom | null = null
+    const initZoom = () => {
+      zoom?.detach()
+      zoom = mediumZoom('.vp-doc figure img', { background: 'var(--vp-c-bg)', margin: 24 })
+    }
+    onMounted(initZoom)
+    watch(() => route.path, () => nextTick(initZoom))
+  },
   enhanceApp({ app }) {
     // <Video src="..." title="..." captions="..." /> bruikbaar in elke .md
     app.component('Video', Video)

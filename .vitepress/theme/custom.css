@@ -202,3 +202,15 @@
   line-height: 1.4;
   color: var(--vp-c-text-2);
 }
+
+/* Klik-om-te-vergroten (medium-zoom, zie theme/index.ts): boven de VitePress-navigatie tonen. */
+.vp-doc figure:not(.doc-video) img {
+  cursor: zoom-in;
+}
+.medium-zoom-overlay {
+  z-index: 100;
+}
+.medium-zoom-image--opened {
+  z-index: 101;
+  cursor: zoom-out;
+}
