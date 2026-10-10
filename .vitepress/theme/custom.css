@@ -183,3 +183,22 @@
   line-height: 1.6;
   color: var(--vp-c-text-2);
 }
+
+/* Afbeelding met onderschrift (markdown-it-image-figures, zie markdown.config).
+   Alleen op pagina's met `figures: true`; het Video-component (.doc-video) heeft zijn eigen stijl. */
+.vp-doc figure:not(.doc-video) {
+  margin: 1.5rem 0;
+}
+.vp-doc figure:not(.doc-video) img {
+  display: block;
+  margin: 0 auto;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 8px;
+}
+.vp-doc figure:not(.doc-video) figcaption {
+  margin-top: 0.5rem;
+  text-align: center;
+  font-size: 0.875rem;
+  line-height: 1.4;
+  color: var(--vp-c-text-2);
+}

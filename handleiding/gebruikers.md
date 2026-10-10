@@ -1,10 +1,14 @@
+---
+figures: true
+---
+
 # Gebruikers
 
 ## Overzicht
 
 Als Applicatiebeheerder beheer je alle gebruikers (medewerkers) binnen je gemeente die toegang hebben tot Docleas. Op het scherm **Gebruikers** kan je gebruikers toevoegen, hun gegevens aanpassen, rollen toekennen of intrekken en hun toegang per module in de tijd afbakenen. Via de periodefilter zie je bovendien hoeveel maanden elke gebruiker in een bepaalde periode actief was.
 
-![Overzicht van alle gebruikers met hun rollen](/screenshots/dienstbeheerders/11_gebruikers_overzicht.jpg)
+![Overzicht van alle gebruikers](/screenshots/dienstbeheerders/11_gebruikers_overzicht.jpg)
 
 ## Het scherm
 
@@ -70,9 +74,13 @@ Je vult alles in één formulier in: gegevens, rol(len) met afdeling en modules 
 
 De knop **Toevoegen** blijft grijs zolang er geen module is aangevinkt of een verplicht veld ontbreekt.
 
-![Dialoog om een nieuwe gebruiker toe te voegen](/screenshots/dienstbeheerders/41_gebruikers_nieuwe_gebruiker.jpg)
+![Een gebruiker toevoegen](/screenshots/dienstbeheerders/42_gebruikers_gebruiker_toevoegen.gif)
 
 > **Tip:** Gebruikers worden in één keer volledig aangemaakt. Mislukt er iets, dan wordt de gebruiker niet half aangemaakt.
+
+Alle acties per gebruiker vind je achter **⋮** aan het einde van de rij:
+
+![Actiemenu van een gebruiker](/screenshots/dienstbeheerders/61_gebruikers_acties_menu.jpg)
 
 ### Gegevens van een gebruiker wijzigen
 
@@ -100,8 +108,8 @@ Wijzig je naam of e-mailadres van een bestaande gebruiker:
 | **Applicatiebeheerder** | Nee | Volledige toegang tot de agenda, gebruikers en instellingen |
 
 Een gebruiker kan meerdere rollen combineren, eventueel voor verschillende afdelingen (bv. Dienstbeheerder voor "Burgerzaken" en Deskundige voor "Milieu"). Zie ook [Rollen en rechten](/introductie/rollen-en-rechten).
-
-![Dialoog om een rol toe te voegen, met de rollenlijst open](/screenshots/dienstbeheerders/21_gebruikers_rol_toevoegen.jpg)
+de gif
+![Een rol toevoegen](/screenshots/dienstbeheerders/22_gebruikers_rol_toevoegen.gif)
 
 #### Een rol toekennen aan meerdere gebruikers
 
@@ -168,4 +176,4 @@ Elke wijziging aan gebruikers wordt gelogd: toevoegen, gegevens wijzigen, rol to
 
 ---
 
-*Laatst bijgewerkt: 9 oktober 2026*
+*Laatst bijgewerkt: 10 oktober 2026*

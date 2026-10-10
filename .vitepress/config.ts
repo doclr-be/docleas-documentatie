@@ -1,5 +1,6 @@
 import { defineConfig } from 'vitepress'
 import llmstxt from 'vitepress-plugin-llms'
+import imageFigures from 'markdown-it-image-figures'
 
 // Waar de site draait — gebruikt voor sitemap.xml, canonical-links en robots.txt.
 // Pas dit aan als er een eigen domein komt (bv. https://docs.docleas.be).
@@ -29,6 +30,16 @@ export default defineConfig({
   // VitePress rendert die zelf nergens; hier voegen we hem na de titel in.
   markdown: {
     config(md) {
+      // Onderschrift onder afbeeldingen: <figure> + <figcaption> met de alt-tekst als bijschrift.
+      // Voorlopig alleen voor pagina's met `figures: true` in de frontmatter (proefversie op
+      // handleiding/gebruikers.md). Globaal maken: vervang `gated` hieronder door `figures`.
+      // (De frontmatter is pas tijdens het renderen bekend, daarom wordt de check in de regel zelf gedaan.)
+      const before = md.core.ruler.getRules('')
+      md.use(imageFigures, { figcaption: 'alt' })
+      const figures = md.core.ruler.getRules('').find((fn) => !before.includes(fn))!
+      const gated = (state: any) => (state.env?.frontmatter?.figures ? figures(state) : undefined)
+      md.core.ruler.at('image_figures', gated)
+
       const render = md.render.bind(md)
       md.render = (src, env) => {
         const html = render(src, env)
