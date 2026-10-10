@@ -23,18 +23,18 @@ Voor de burger verandert er niets. Het blijft **één afspraak**: de burger krij
 
 Wanneer een afspraak ook de aanwezigheid van een collega vraagt en je wilt dat de afspraak in diens agenda staat. Zo ziet de collega de afspraak, en wordt dat tijdslot niet nog eens ingepland.
 
-In de agenda van je collega staat de afspraak als **deelname**, herkenbaar aan de letter **D**.
+In de agenda van je collega staat de afspraak als **deelname**, herkenbaar aan de letter **D**. Een hoofdafspraak is herkenbaar aan de letter **H**.
 
-Een deelname is **alleen-lezen**. Als je ze opent, zie je de melding *"Deze afspraak is een kopie, wijzigen kan enkel op de hoofdafspraak"*.
+Een deelname is **alleen-lezen**. Als je ze opent, zie je de melding *"Deze afspraak is een kopie, wijzigen kan enkel op de hoofdafspraak"*, met een link naar de **hoofdafspraak** en de link **maak deze de hoofdafspraak**.
 
-In het afspraakdetail van de hoofdafspraak en van de deelname staan de namen van alle agenda's.
+In het afspraakdetail van de hoofdafspraak en van de deelname staan de namen van alle agenda's als knoppen bij **Agenda's**.
 
 ### Wijzigingen op de hoofdafspraak volgen
 
 Alles wat je op de hoofdafspraak doet, wordt overgenomen in de deelnames:
 
-- Wijzgingen
-- verplaatsen
+- Wijzigen
+- Verplaatsen
 - Annuleren
 
 Verplaats je de afspraak, dan schuift ze in alle agenda's mee. Is de agenda op het nieuwe moment niet vrij, dan zie je de waarschuwing **"Agenda al bezet."** met de naam van de agenda.
@@ -61,12 +61,12 @@ Het tabblad **Afspraak geschiedenis** toont wanneer een agenda is toegevoegd, al
 
 Het bolletje wordt opnieuw berekend als je het tijdstip aanpast.
 
-Is je collega niet vrij, dan krijg je een waarschuwing en moet je bevestigen. Je kunt de afspraak alsong vastleggen.
+Is je collega niet vrij, dan krijg je een waarschuwing en moet je bevestigen. Je kunt de afspraak alsnog vastleggen.
 
 ### Bij een bestaande afspraak
 
 1. Open de hoofdafspraak.
-2. Klik bij **Agenda** op **wijzig**.
+2. Klik bij **Agenda's** op het potlood (*Agenda's wijzigen*).
 3. Selecteer of deselecteer de agenda's van collega's.
 4. Klik op **Agenda's opslaan**.
 
@@ -79,7 +79,7 @@ Verwijder je een collega, dan verdwijnt de afspraak uit diens agenda.
 Wil je dat de afspraak voortaan bij een andere agenda hoort?
 
 1. Open de deelname bij de collega en klik op **maak deze de hoofdafspraak**.
-   Of open de hoofdafspraak en klik op **[agendanaam] de hoofdafspraak maken**.
+   Of open de hoofdafspraak, klik bij **Agenda's** op de knop met de naam van de collega en kies **Hoofdafspraak maken**.
 2. Bevestig in het venster **Hoofdafspraak wijzigen**.
 
 De rollen wisselen: de oorspronkelijke hoofdafspraak wordt een deelname en omgekeerd. Je kunt dit altijd terugdraaien. Je kunt alleen wisselen naar een agenda die al deelnemer is van deze afspraak.
@@ -91,4 +91,4 @@ De rollen wisselen: de oorspronkelijke hoofdafspraak wordt een deelname en omgek
 
 ---
 
-*Laatst bijgewerkt: 7 oktober 2026*
+*Laatst bijgewerkt: 11 oktober 2026*
