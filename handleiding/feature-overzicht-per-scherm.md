@@ -144,7 +144,7 @@ De medewerkersapp bestaat uit de moderne medewerkersapp en de klassieke medewerk
 
 - **Basisgegevens**, Beheer naam, afdeling en locatie.
 - **Meldingen**, Stel burgerzichtbaarheid, e-mailverzending, mailinglijst en aankomstmelding in.
-- **Integraties**, Beheer de Outlook-koppeling (inclusief "Outlook als privé behandelen" en "Docleas als privé behandelen") en sms-instellingen wanneer die actief zijn.
+- **Integraties**, Beheer de Outlook-koppeling (inclusief "Gegevens enkel in Docleas", "Outlook als privé behandelen" en "Docleas als privé behandelen") en sms-instellingen wanneer die actief zijn.
 - **Agenda verwijderen**, Verwijder een agenda.
 
 ### Benodigdheden: overzicht
