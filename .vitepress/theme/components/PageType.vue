@@ -17,9 +17,6 @@ const isHowTo = computed(() => frontmatter.value.type === 'how-to')
 </template>
 
 <style scoped>
-.page-type {
-  margin: 0 0 0.75rem;
-}
 .page-type__badge {
   display: inline-block;
   font-size: 0.75rem;

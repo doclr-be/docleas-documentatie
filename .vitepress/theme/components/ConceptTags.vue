@@ -38,9 +38,6 @@ const tags = computed(() => {
   flex-wrap: wrap;
   align-items: center;
   gap: 0.4rem 0.5rem;
-  margin: 0 0 1.5rem;
-  padding-bottom: 1rem;
-  border-bottom: 1px dashed var(--vp-c-divider);
 }
 .concept-tags__label {
   font-size: 0.8rem;

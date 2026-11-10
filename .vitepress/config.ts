@@ -120,6 +120,17 @@ export default defineConfig({
     search: {
       provider: 'local',
       options: {
+        miniSearch: {
+          searchOptions: {
+            // Zoek alleen in de eigen kop en tekst van een sectie, niet in de koppen erboven. Anders
+            // komt elke sectie van een pagina 'Agenda afdrukken' mee als je op 'afdrukken' zoekt.
+            fields: ['title', 'text'],
+            // Een treffer in de titel telt zwaarder dan een treffer in de lopende tekst.
+            boost: { title: 8, text: 1 },
+            fuzzy: 0.2,
+            prefix: true,
+          },
+        },
         translations: {
           button: { buttonText: 'Zoeken', buttonAriaLabel: 'Zoeken' },
           modal: {
@@ -229,7 +240,15 @@ export default defineConfig({
                 { text: 'Overzichtspagina', link: '/handleiding/producten/overzichtspagina' },
               ],
             },
-            { text: "Agenda's", link: '/handleiding/agendas' },
+            {
+              text: "Agenda's",
+              link: '/handleiding/agendas',
+              collapsed: false,
+              items: [
+                { text: 'Agenda afdrukken', link: '/handleiding/agendas/agenda-afdrukken' },
+                { text: 'Outlook-koppeling', link: '/handleiding/agendas/outlook-koppeling' },
+              ],
+            },
             {
               text: 'Afspraken',
               link: '/handleiding/afspraken/',
@@ -296,6 +315,7 @@ export default defineConfig({
     darkModeSwitchLabel: 'Thema',
     lightModeSwitchTitle: 'Schakel naar lichte modus',
     darkModeSwitchTitle: 'Schakel naar donkere modus',
-    lastUpdatedText: 'Laatst bijgewerkt',
+    // Alleen de datum, geen uur (formatOptions vervangt de standaard 'short' datum + tijd)
+    lastUpdated: { text: 'Laatst bijgewerkt', formatOptions: { dateStyle: 'medium', forceLocale: true } },
   },
 })

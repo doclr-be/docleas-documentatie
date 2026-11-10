@@ -1,5 +1,6 @@
 ---
 description: Per product kiezen welk adres de burger krijgt in de mail, de sms en de agenda-uitnodiging.
+concepts: [product]
 type: how-to
 updated: 2026-11-10
 ---

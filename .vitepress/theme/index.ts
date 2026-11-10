@@ -11,17 +11,19 @@ import Breadcrumb from './components/Breadcrumb.vue'
 import PageType from './components/PageType.vue'
 import HowToList from './components/HowToList.vue'
 import RecentChanges from './components/RecentChanges.vue'
+import PrintButton from './components/PrintButton.vue'
 
 export default {
   extends: DefaultTheme,
   // 'Deze pagina bewerken op GitHub'-knop onderaan de content.
   // Alleen zichtbaar voor wie de vlag heeft gezet (zie EditLink.vue) — klanten niet.
   // PageType: label 'How-to' bovenaan de content (frontmatter 'type: how-to').
+  // PrintButton: 'Download als PDF' (window.print, zie PrintButton.vue en @media print in custom.css).
   // ConceptTags: badges bovenaan de content met de concepten die de pagina behandelt
   // (frontmatter 'concepts'); toont niets als die sleutel ontbreekt.
   Layout: () =>
     h(DefaultTheme.Layout, null, {
-      'doc-before': () => [h(Breadcrumb), h(PageType), h(ConceptTags)],
+      'doc-before': () => [h(PrintButton), h(Breadcrumb), h('div', { class: 'docleas-meta' }, [h(PageType), h(ConceptTags)])],
       'doc-footer-before': () => h(EditLink),
     }),
   // Klik op een afbeelding met onderschrift (markdown-it-image-figures, zie config.ts) om ze

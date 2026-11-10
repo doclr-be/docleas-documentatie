@@ -1,7 +1,10 @@
 import { createContentLoader } from 'vitepress'
+import { CONCEPTS, isConceptKey } from '../theme/concepts'
 
-// Alle handleiding-pagina's met frontmatter 'type: how-to', gegroepeerd per onderdeel
-// (eerste map onder /handleiding/). Wordt bij build berekend en getoond door <HowToList />.
+// Alle handleiding-pagina's met frontmatter 'type: how-to', gegroepeerd per concept
+// (frontmatter 'concepts', zie theme/concepts.ts). Een pagina met meerdere concepten staat onder
+// elk van die concepten; een pagina zonder geldig concept valt in 'Overige'.
+// Wordt bij build berekend en getoond door <HowToList />.
 
 export interface HowToRef {
   title: string
@@ -18,13 +21,6 @@ export interface HowToGroup {
 declare const data: HowToGroup[]
 export { data }
 
-const GROUP_LABELS: Record<string, string> = {
-  afspraken: 'Afspraken',
-  producten: 'Producten',
-  burgerflow: 'Burgerflow',
-  'mijn-burger-profiel': 'Mijn Burger Profiel',
-  werkschemas: "Werkschema's",
-}
 const OTHER = 'Overige'
 
 export default createContentLoader('handleiding/**/*.md', {
@@ -39,11 +35,12 @@ export default createContentLoader('handleiding/**/*.md', {
       const title = (page.frontmatter.title as string | undefined) ?? h1 ?? page.url
       const description = page.frontmatter.description as string | undefined
 
-      // /handleiding/<onderdeel>/... ; een pagina direct onder /handleiding/ valt in 'Overige'
-      const segments = page.url.split('/').filter(Boolean)
-      const label = segments.length > 2 ? (GROUP_LABELS[segments[1]] ?? segments[1]) : OTHER
+      const concepts = Array.isArray(page.frontmatter.concepts) ? page.frontmatter.concepts.map(String) : []
+      const labels = concepts.filter(isConceptKey).map((key) => CONCEPTS[key].label)
 
-      ;(groups.get(label) ?? groups.set(label, []).get(label)!).push({ title, url: page.url, description })
+      for (const label of labels.length ? labels : [OTHER]) {
+        ;(groups.get(label) ?? groups.set(label, []).get(label)!).push({ title, url: page.url, description })
+      }
     }
 
     return [...groups.entries()]
