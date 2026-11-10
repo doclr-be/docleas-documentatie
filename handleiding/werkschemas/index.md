@@ -1,3 +1,7 @@
+---
+updated: 2026-02-18
+---
+
 # Werkschema's beheren
 
 ## Overzicht
@@ -158,7 +162,3 @@ Klik op het verwijdericoon naast de dagnaam in de kalenderheader om alle beschik
 ![Dag verwijderen](werkschema_dag_verwijderen.png)
 
 Bevestig via **Bevestig**.
-
----
-
-*Laatst bijgewerkt: 18 februari 2026*

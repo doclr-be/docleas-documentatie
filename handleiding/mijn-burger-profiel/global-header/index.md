@@ -1,3 +1,7 @@
+---
+updated: 2026-02-24
+---
+
 # Global Header
 
 ## Overzicht
@@ -29,7 +33,3 @@ Via het profielmenu rechtsboven beheer je je account:
 
 - **Mijn gegevens** - Bekijk en wijzig je persoonlijke gegevens
 - **Afmelden** - Log uit uit je burgerportaal
-
----
-
-*Laatst bijgewerkt: 24 februari 2026*

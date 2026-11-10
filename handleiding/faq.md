@@ -1,3 +1,7 @@
+---
+updated: 2026-02-16
+---
+
 # FAQ - Veelgestelde vragen voor dienstbeheerders
 
 ## Algemeen
@@ -6,7 +10,3 @@
 
 **Product** = Een dienst die burgers kunnen boeken (bijv. "Identiteitskaart aanvragen")
 **Agenda** = De planning van een loket of medewerker waar afspraken op gemaakt worden
-
----
-
-*Laatst bijgewerkt: 16 februari 2026*

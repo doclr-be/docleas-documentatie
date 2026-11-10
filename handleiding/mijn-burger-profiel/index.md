@@ -1,3 +1,7 @@
+---
+updated: 2026-02-24
+---
+
 # Mijn Burger Profiel
 
 ## Overzicht
@@ -29,7 +33,3 @@ Via notificaties word je op de hoogte gehouden van wijzigingen en herinneringen 
 Vanuit je profiel kan je eenvoudig een nieuwe afspraak inplannen bij je lokaal bestuur. Je doorloopt een stap-voor-stap wizard waarmee je het gewenste product, de locatie en het tijdstip kiest.
 
 [Meer over Afspraak maken](afspraak-maken.md)
-
----
-
-*Laatst bijgewerkt: 24 februari 2026*

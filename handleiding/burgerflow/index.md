@@ -1,3 +1,7 @@
+---
+updated: 2026-02-18
+---
+
 # De Burgerflow - Werking en configuratie
 
 ## Overzicht
@@ -138,7 +142,3 @@ De inhoud van de bevestigingsmail stel je in via [Gemeente-instellingen](../geme
 | Tijdstipkeuze | [Werkschema's](../werkschemas/index.md), [Beschikbaarheden](../producten/beschikbaarheden.md) |
 | Gegevens invullen | [Producten - Velden](../producten/velden.md) |
 | Bevestiging | [Gemeente-instellingen](../gemeente-instellingen.md) |
-
----
-
-*Laatst bijgewerkt: 18 februari 2026*

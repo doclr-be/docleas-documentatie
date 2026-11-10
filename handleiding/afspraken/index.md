@@ -1,6 +1,7 @@
 ---
 description: Afspraken maken en beheren in de agenda, en de extra mogelijkheden rond afspraken.
 concepts: [afspraak, agenda]
+updated: 2026-11-10
 ---
 
 # Afspraken
@@ -16,7 +17,4 @@ Deze sectie beschrijft de extra mogelijkheden rond afspraken. De basishandelinge
 | Onderwerp | Inhoud |
 |-----------|--------|
 | [Afspraken in meerdere agenda's](/handleiding/afspraken/meerdere-agendas) | Eén afspraak tegelijk in meerdere agenda's plaatsen. |
-
----
-
-*Laatst bijgewerkt: 7 oktober 2026*
+| [Afspraak afdrukken](/handleiding/afspraken/afspraak-afdrukken) | Een afspraak afdrukken als bevestigingsbrief met QR-code. |

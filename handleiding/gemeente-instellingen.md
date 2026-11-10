@@ -1,3 +1,7 @@
+---
+updated: 2026-02-16
+---
+
 # Gemeente-instellingen
 
 ## Overzicht
@@ -11,7 +15,3 @@ Als dienstbeheerder kun je de algemene instellingen van je gemeente configureren
 3. Kies **Gemeente-instellingen**
 
 ## Beschikbare instellingen
-
----
-
-*Laatst bijgewerkt: 16 februari 2026*

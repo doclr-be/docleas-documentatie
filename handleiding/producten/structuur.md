@@ -1,3 +1,7 @@
+---
+updated: 2026-02-16
+---
+
 # Producten - Structuur
 
 ## Overzicht
@@ -90,7 +94,3 @@ De structuurpagina toont ook alle tegels en de onderliggende structuur.
 
 **Producten** (Laagste niveau)
 - Alle producten onder de groepen. Probeer het zo in te stellen zodat de burger makkelijk zijn product kan terugvinden.
-
----
-
-*Laatst bijgewerkt: 16 februari 2026*

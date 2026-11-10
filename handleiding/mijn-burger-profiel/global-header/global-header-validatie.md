@@ -1,3 +1,7 @@
+---
+updated: 2026-02-24
+---
+
 # Global Header Validatie
 
 ## Overzicht
@@ -63,7 +67,3 @@ Stel je een afwijking vast tijdens de validatie? Neem dan contact op met de Docl
 - Een beschrijving van het vastgestelde probleem
 - Een screenshot van het probleem
 - Het apparaat en de browser die je gebruikte
-
----
-
-*Laatst bijgewerkt: 24 februari 2026*

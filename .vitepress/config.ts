@@ -79,6 +79,14 @@ export default defineConfig({
   ],
 
   transformPageData(pageData) {
+    // 'Laatst bijgewerkt' onderaan de pagina: de eigen frontmatter-datum 'updated' (jjjj-mm-dd) gaat voor
+    // op de git-datum, zodat typfouten of opmaakcommits de datum niet verschuiven. Zonder 'updated': git.
+    const updated = pageData.frontmatter.updated
+    if (updated) {
+      const timestamp = new Date(updated as string | Date).getTime()
+      if (!Number.isNaN(timestamp)) pageData.lastUpdated = timestamp
+    }
+
     const path = pageData.relativePath
       .replace(/(^|\/)index\.md$/, '$1') // .../index.md -> .../
       .replace(/\.md$/, '.html')
@@ -205,7 +213,14 @@ export default defineConfig({
               items: [
                 { text: 'Algemene werking', link: '/handleiding/producten/algemene-werking' },
                 { text: 'Producten beheren', link: '/handleiding/producten/producten-beheren' },
-                { text: 'Algemene instellingen', link: '/handleiding/producten/algemene-instellingen' },
+                {
+                  text: 'Algemene instellingen',
+                  link: '/handleiding/producten/algemene-instellingen',
+                  collapsed: false,
+                  items: [
+                    { text: 'Adres op product instellen', link: '/handleiding/producten/algemene-instellingen/adres-van-een-product' },
+                  ],
+                },
                 { text: 'Teksten', link: '/handleiding/producten/teksten' },
                 { text: 'Velden', link: '/handleiding/producten/velden' },
                 { text: 'Beschikbaarheden', link: '/handleiding/producten/beschikbaarheden' },
@@ -221,6 +236,7 @@ export default defineConfig({
               collapsed: false,
               items: [
                 { text: "Afspraken in meerdere agenda's", link: '/handleiding/afspraken/meerdere-agendas' },
+                { text: 'Afspraak afdrukken', link: '/handleiding/afspraken/afspraak-afdrukken' },
               ],
             },
             { text: "Werkschema's", link: '/handleiding/werkschemas/' },
@@ -250,6 +266,8 @@ export default defineConfig({
           text: 'Naslag',
           collapsed: false,
           items: [
+            { text: "How-to's", link: '/handleiding/how-tos' },
+            { text: 'Recent gewijzigd', link: '/handleiding/recent-gewijzigd' },
             { text: 'FAQ voor dienstbeheerders', link: '/handleiding/faq' },
             { text: 'Feature-overzicht per scherm', link: '/handleiding/feature-overzicht-per-scherm' },
           ],

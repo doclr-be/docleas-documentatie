@@ -1,3 +1,7 @@
+---
+updated: 2026-02-16
+---
+
 # Producten - Algemene werking
 
 ## Wat zijn producten?
@@ -9,7 +13,3 @@ In Docleas is een **product** een dienst die jegemeente aanbiedt en waarvoor bur
 - Uittreksel uit bevolkingsregister
 - Attest aanvragen
 - Omgevingsvergunning aanvragen
-
----
-
-*Laatst bijgewerkt: 16 februari 2026*

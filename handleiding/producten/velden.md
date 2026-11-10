@@ -1,3 +1,7 @@
+---
+updated: 2026-02-16
+---
+
 # Producten - Velden
 
 ## Overzicht
@@ -9,7 +13,3 @@ Het tabblad **Velden** bepaalt welke gegevens burgers moeten invullen wanneer ze
 1. Ga naar **Producten** > **Alle producten**
 2. Klik op een product
 3. Selecteer het tabblad **Velden**
-
----
-
-*Laatst bijgewerkt: 16 februari 2026*

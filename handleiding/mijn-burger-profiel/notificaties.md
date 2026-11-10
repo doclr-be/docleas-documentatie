@@ -1,3 +1,7 @@
+---
+updated: 2026-02-24
+---
+
 # Notificaties
 
 ## Overzicht
@@ -42,7 +46,3 @@ Controleer je spammap. Als de e-mail daar ook niet staat, controleer dan of het 
 
 **Kan ik notificaties uitschakelen?**
 Notificaties zijn gekoppeld aan je afspraken en worden automatisch verstuurd. Je kan dit niet zelf uitschakelen via het portaal.
-
----
-
-*Laatst bijgewerkt: 24 februari 2026*

@@ -30,6 +30,32 @@ npm run docs:preview  # gebouwde site lokaal serveren
 > De technische/architectuurdocumentatie (`technische-documentatie.md` uit docsify) is
 > voorlopig weggelaten. De brontekst staat nog in de git-historie als die terug moet.
 
+### Pagina's markeren als how-to
+
+Een pagina die een stap-voor-stap handeling beschrijft, markeer je met `type: how-to` in de frontmatter.
+Bovenaan de pagina verschijnt dan het label **How-to** (component `PageType.vue`). Alle how-to's staan automatisch in het overzicht onder *Handleiding → Naslag → How-to's* (`handleiding/how-tos.md`, data loader `howtos.data.ts`).
+
+```yaml
+---
+description: ...
+type: how-to
+---
+```
+
+### Wijzigingsdatum bijhouden
+
+Zet `updated: jjjj-mm-dd` in de frontmatter van een pagina die je inhoudelijk hebt aangepast. De pagina komt dan
+bovenaan het overzicht *Handleiding → Naslag → Recent gewijzigd* (`handleiding/recent-gewijzigd.md`, data loader
+`recentChanges.data.ts`, de 25 nieuwste pagina's uit de handleiding en de opleidingen). Dezelfde datum staat onderaan de pagina bij *Laatst bijgewerkt* (zonder `updated` is dat de git-datum). Pas de datum niet aan voor
+een typfout of opmaak. Pagina's zonder `updated` staan niet in het overzicht.
+
+```yaml
+---
+description: ...
+updated: 2026-11-10
+---
+```
+
 ### Het "opleiding = ruggengraat"-principe
 
 Docleas is te uitgebreid om volledig in een opleiding te stoppen. Elk hoofdstuk is daarom

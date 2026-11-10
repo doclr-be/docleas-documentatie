@@ -1,3 +1,7 @@
+---
+updated: 2026-02-16
+---
+
 # Statistieken
 
 ## Overzicht
@@ -425,7 +429,3 @@ Bezetting = (Aantal geboekte tijdslots / Totaal beschikbare tijdslots) × 100%
 
 **Worden geannuleerde afspraken meegeteld in de totalen?**
 Ja, tenzij jefiltert op status "Uitgevoerd". Jeziet altijd alle afspraken inclusief geannuleerde.
-
----
-
-*Laatst bijgewerkt: 16 februari 2026*

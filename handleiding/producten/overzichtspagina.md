@@ -1,3 +1,7 @@
+---
+updated: 2026-02-16
+---
+
 # Producten - Overzichtspagina
 
 ## Overzicht
@@ -12,7 +16,3 @@ De **overzichtspagina** toont alle producten van jegemeente in één lijst. Dit 
 Jekomt nu op de overzichtspagina met alle producten.
 
 ## Wat ziet jeop de overzichtspagina?
-
----
-
-*Laatst bijgewerkt: 16 februari 2026*

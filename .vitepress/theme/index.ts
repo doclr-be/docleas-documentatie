@@ -8,16 +8,20 @@ import EditLink from './components/EditLink.vue'
 import ConceptTags from './components/ConceptTags.vue'
 import ConceptGuides from './components/ConceptGuides.vue'
 import Breadcrumb from './components/Breadcrumb.vue'
+import PageType from './components/PageType.vue'
+import HowToList from './components/HowToList.vue'
+import RecentChanges from './components/RecentChanges.vue'
 
 export default {
   extends: DefaultTheme,
   // 'Deze pagina bewerken op GitHub'-knop onderaan de content.
   // Alleen zichtbaar voor wie de vlag heeft gezet (zie EditLink.vue) — klanten niet.
+  // PageType: label 'How-to' bovenaan de content (frontmatter 'type: how-to').
   // ConceptTags: badges bovenaan de content met de concepten die de pagina behandelt
   // (frontmatter 'concepts'); toont niets als die sleutel ontbreekt.
   Layout: () =>
     h(DefaultTheme.Layout, null, {
-      'doc-before': () => [h(Breadcrumb), h(ConceptTags)],
+      'doc-before': () => [h(Breadcrumb), h(PageType), h(ConceptTags)],
       'doc-footer-before': () => h(EditLink),
     }),
   // Klik op een afbeelding met onderschrift (markdown-it-image-figures, zie config.ts) om ze
@@ -37,5 +41,9 @@ export default {
     app.component('Video', Video)
     // <ConceptGuides concept="agenda" /> — omgekeerde index op concept-pagina's
     app.component('ConceptGuides', ConceptGuides)
+    // <HowToList /> — overzicht van alle pagina's met 'type: how-to'
+    app.component('HowToList', HowToList)
+    // <RecentChanges /> — recent gewijzigde pagina's op basis van frontmatter 'updated'
+    app.component('RecentChanges', RecentChanges)
   },
 } satisfies Theme

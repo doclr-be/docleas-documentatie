@@ -1,3 +1,7 @@
+---
+updated: 2026-02-16
+---
+
 # Producten - Beschikbaarheden
 
 ## Overzicht
@@ -9,7 +13,3 @@ Het tabblad **Beschikbaarheden** bepaalt wanneer een product beschikbaar is voor
 2. De werkschema's van de agenda's waaraan het product gekoppeld is
 
 ## Toegang
-
----
-
-*Laatst bijgewerkt: 16 februari 2026*

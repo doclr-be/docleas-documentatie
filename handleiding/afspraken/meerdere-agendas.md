@@ -1,6 +1,7 @@
 ---
 description: Een afspraak tegelijk op meerdere agenda's plaatsen door een collega te koppelen.
 concepts: [afspraak, agenda, beschikbaarheid]
+updated: 2026-10-11
 ---
 
 # Afspraken in meerdere agenda's
@@ -88,7 +89,3 @@ De rollen wisselen: de oorspronkelijke hoofdafspraak wordt een deelname en omgek
 
 - [Agenda's](/handleiding/agendas)
 - [Beschikbaarheid](/introductie/kernbegrippen#beschikbaarheid)
-
----
-
-*Laatst bijgewerkt: 11 oktober 2026*

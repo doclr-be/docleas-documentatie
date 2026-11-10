@@ -1,3 +1,7 @@
+---
+updated: 2026-02-16
+---
+
 # Producten - Teksten
 
 ## Overzicht
@@ -7,7 +11,3 @@ Het tabblad **Teksten** bevat alle informatieve teksten die burgers te zien krij
 - Te weten wat ze moeten meebrengen
 - De kosten te kennen
 - De verwachte behandeltermijn te weten
-
----
-
-*Laatst bijgewerkt: 16 februari 2026*

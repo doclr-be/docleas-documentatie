@@ -1,3 +1,7 @@
+---
+updated: 2026-11-06
+---
+
 # Producten - Algemene instellingen
 
 ## Overzicht
@@ -10,6 +14,6 @@ Bij het aanmaken of bewerken van een product vult jeeerst de algemene instelling
 2. Klik op een bestaand product of maak een nieuw product aan
 3. Het tabblad **Algemene instellingen** wordt standaard geopend
 
----
+## Adres
 
-*Laatst bijgewerkt: 16 februari 2026*
+Bij **Adres** kies je welk adres de burger krijgt in de mail, de sms en de agenda-uitnodiging van dit product. Hoe dat werkt lees je op [Adres op product instellen](algemene-instellingen/adres-van-een-product.md).

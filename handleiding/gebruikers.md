@@ -1,5 +1,6 @@
 ---
 figures: true
+updated: 2026-10-10
 ---
 
 # Gebruikers
@@ -173,7 +174,3 @@ Elke wijziging aan gebruikers wordt gelogd: toevoegen, gegevens wijzigen, rol to
 1. Klik op het **geschiedenis**-icoon rechtsboven
 2. Per regel zie je **tijdstip**, **door wie**, voor welke **gebruiker** en welke **actie**
 3. Klik op de pijl achteraan een regel om de **oude en nieuwe waarde** per veld te zien
-
----
-
-*Laatst bijgewerkt: 10 oktober 2026*

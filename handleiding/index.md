@@ -36,5 +36,7 @@ Zoek je een specifieke taak op die je al begrijpt, dan ben je hier op de juiste 
 
 ## Naslag
 
+- [How-to's](/handleiding/how-tos), alle stap-voor-stap handelingen op één plek.
+- [Recent gewijzigd](/handleiding/recent-gewijzigd), de pagina's die recent inhoudelijk zijn aangepast.
 - [FAQ voor dienstbeheerders](/handleiding/faq)
 - [Feature-overzicht per scherm](/handleiding/feature-overzicht-per-scherm), welke functie op welk scherm zit, per app.

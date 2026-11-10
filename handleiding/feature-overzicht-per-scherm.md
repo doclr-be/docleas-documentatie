@@ -1,3 +1,7 @@
+---
+updated: 2026-08-28
+---
+
 # Feature-overzicht per scherm
 
 ## Overzicht
@@ -363,7 +367,3 @@ De medewerkersapp bestaat uit de moderne medewerkersapp en de klassieke medewerk
 ### Superuser: onderhoud
 
 - **Onderhoud uitvoeren**, Voer Memo-agenda- en JSON-import- of updateacties uit.
-
----
-
-*Laatst bijgewerkt: 28 augustus 2026*

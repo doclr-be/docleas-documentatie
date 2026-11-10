@@ -1,3 +1,7 @@
+---
+updated: 2026-02-24
+---
+
 # Afspraak maken
 
 ## Overzicht
@@ -53,7 +57,3 @@ Het kan zijn dat er op dit moment geen vrije tijdsloten zijn. Probeer een andere
 
 **Krijg ik een bevestiging van mijn afspraak?**
 Ja, na het bevestigen ontvang je automatisch een bevestigingsmail. Zie ook [Notificaties](notificaties.md).
-
----
-
-*Laatst bijgewerkt: 24 februari 2026*
